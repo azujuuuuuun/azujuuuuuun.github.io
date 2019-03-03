@@ -1,10 +1,15 @@
 import React from "react"
 import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import Header from '../components/Header'
 
 export default ({ data }) => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>azujuuuuuun.github.io</title>
+    </Helmet>
     <Header />
     <div>Hello world!</div>
     <ul>
