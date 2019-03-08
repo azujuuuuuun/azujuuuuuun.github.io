@@ -10,7 +10,9 @@ export default ({ data }) => {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{`${markdownRemark.frontmatter.title} | azujuuuuuun.github.io`}</title>
+        <title>
+          {`${markdownRemark.frontmatter.title} | azujuuuuuun.github.io`}
+        </title>
       </Helmet>
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>
