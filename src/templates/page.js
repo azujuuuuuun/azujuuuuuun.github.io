@@ -2,19 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 
+import Layout from '../components/Layout'
 import Header from '../components/Header'
 
 export default ({ data }) => {
   const { markdownRemark } = data
   return (
-    <div>
+    <Layout>
       <Helmet>
         <meta charSet="utf-8" />
         <title>{`${markdownRemark.frontmatter.title} | azujuuuuuun.github.io`}</title>
       </Helmet>
       <Header />
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-    </div>
+    </Layout>
   )
 }
 

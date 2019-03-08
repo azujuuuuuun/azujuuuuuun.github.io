@@ -2,10 +2,11 @@ import React from "react"
 import { Link, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
+import Layout from '../components/Layout'
 import Header from '../components/Header'
 
 export default ({ data }) => (
-  <div>
+  <Layout>
     <Helmet>
       <meta charSet="utf-8" />
       <title>azujuuuuuun.github.io</title>
@@ -21,7 +22,7 @@ export default ({ data }) => (
         </li>
       ))}
     </ul>
-  </div>
+  </Layout>
 )
 
 export const query = graphql`
