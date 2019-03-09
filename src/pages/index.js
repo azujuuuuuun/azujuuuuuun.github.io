@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 
 export default ({ data }) => (
-  <Layout>
+  <Layout isHome>
     <Helmet>
       <meta charSet="utf-8" />
       <title>azujuuuuuun.github.io</title>
