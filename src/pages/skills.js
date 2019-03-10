@@ -14,7 +14,7 @@ export default () => (
     <h1>スキル</h1>
     <h2>Works</h2>
     <h3>
-      <a href="http://wkd.main.jp">早稲田大学弓道同好会ホームページ</a>
+      <a href="http://wkd.main.jp" target="_blank">早稲田大学弓道同好会ホームページ</a>
     </h3>
     <img src={work1} alt="早稲田大学弓道同好会ホームページ" />
     <p>
