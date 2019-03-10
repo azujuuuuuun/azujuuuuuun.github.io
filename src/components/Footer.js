@@ -1,7 +1,16 @@
 import React from 'react'
 
-export default () => (
-  <footer>
-    <small>©Copyright jun. All rights reserved.</small>
-  </footer>
-)
+import Links from '../components/Links'
+import styles from './FooterStyles'
+
+export default props => {
+  const { isHome } = props
+  return (
+    <footer>
+      {!isHome && (
+        <Links listStyle={styles.linksList} itemStyle={styles.linksItem} />
+      )}
+      <small>©Copyright jun. All rights reserved.</small>
+    </footer>
+  )
+}
