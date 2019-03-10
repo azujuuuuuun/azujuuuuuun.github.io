@@ -18,7 +18,6 @@ title: "好きなもの"
 - BLUE GIANT
 - ヒナまつり
 - Artiste
-- 彼方のアストラ
 
 ## 映画
 
