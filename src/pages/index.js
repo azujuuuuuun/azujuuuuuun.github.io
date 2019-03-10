@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
+import Links from '../components/Links'
 
 export default () => (
   <Layout isHome>
@@ -11,19 +11,6 @@ export default () => (
       <title>azujuuuuuun.github.io</title>
     </Helmet>
     <p>Hello, world!</p>
-    <ul>
-      <li>
-        <Link to="/about">自己紹介</Link>
-      </li>
-      <li>
-        <Link to="/skills">スキル</Link>
-      </li>
-      <li>
-        <Link to="/favorites">好きなもの</Link>
-      </li>
-      <li>
-        <Link to="/links">リンク</Link>
-      </li>
-    </ul>
+    <Links />
   </Layout>
 )
