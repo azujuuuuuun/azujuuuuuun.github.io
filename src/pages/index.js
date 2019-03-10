@@ -21,6 +21,9 @@ export default () => (
       <li>
         <Link to="/favorites">好きなもの</Link>
       </li>
+      <li>
+        <Link to="/links">リンク</Link>
+      </li>
     </ul>
   </Layout>
 )
