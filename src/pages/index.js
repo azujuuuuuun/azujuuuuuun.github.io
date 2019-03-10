@@ -12,6 +12,9 @@ export default ({ data }) => (
     </Helmet>
     <p>Hello, world!</p>
     <ul>
+      <li>
+        <Link to="/about">自己紹介</Link>
+      </li>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <li key={node.id}>
           <Link to={node.fields.slug}>
