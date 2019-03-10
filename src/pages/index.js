@@ -10,7 +10,7 @@ export default ({ data }) => (
       <meta charSet="utf-8" />
       <title>azujuuuuuun.github.io</title>
     </Helmet>
-    <div>Hello world!</div>
+    <p>Hello world!</p>
     <ul>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <li key={node.id}>
