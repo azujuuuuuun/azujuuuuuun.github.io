@@ -1,4 +1,7 @@
 const styles = {
+  container: {
+    paddingTop: 20
+  },
   linksList: {
     margin: 0
   },
