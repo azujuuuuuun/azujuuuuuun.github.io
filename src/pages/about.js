@@ -1,8 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { withPrefix } from 'gatsby'
 
 import Layout from '../components/Layout'
-import avatar from '../images/avatar.jpg'
 
 export default () => (
   <Layout>
@@ -11,7 +11,7 @@ export default () => (
       <title>自己紹介 | azujuuuuuun.github.io</title>
     </Helmet>
     <h1>自己紹介</h1>
-    <img src={avatar} alt="アバター" />
+    <img src={withPrefix('/img/avatar.jpg')} alt="アバター" />
     <ul>
       <li>userId: azujuuuuuun</li>
       <li>username: jun</li>
