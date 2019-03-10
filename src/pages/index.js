@@ -15,6 +15,9 @@ export default ({ data }) => (
       <li>
         <Link to="/about">自己紹介</Link>
       </li>
+      <li>
+        <Link to="/skills">スキル</Link>
+      </li>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <li key={node.id}>
           <Link to={node.fields.slug}>
