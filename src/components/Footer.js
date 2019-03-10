@@ -6,7 +6,7 @@ import styles from './FooterStyles'
 export default props => {
   const { isHome } = props
   return (
-    <footer>
+    <footer style={styles.container}>
       {!isHome && (
         <Links listStyle={styles.linksList} itemStyle={styles.linksItem} />
       )}
