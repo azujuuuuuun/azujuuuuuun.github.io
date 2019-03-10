@@ -1,9 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { withPrefix } from 'gatsby'
 
 import Layout from '../components/Layout'
-import work1 from '../images/work1.png'
-import work2 from '../images/work2.png'
 
 export default () => (
   <Layout>
@@ -16,7 +15,7 @@ export default () => (
     <h3>
       <a href="http://wkd.main.jp" target="_blank">早稲田大学弓道同好会ホームページ</a>
     </h3>
-    <img src={work1} alt="早稲田大学弓道同好会ホームページ" />
+    <img src={withPrefix('/img/work1.png')} alt="早稲田大学弓道同好会ホームページ" />
     <p>
       早稲田大学弓道同好会のホームページです。
       Bootstrapを使って作りました。
@@ -25,7 +24,7 @@ export default () => (
     <h3>
       <a href="https://azujuuuuuun.github.io">azujuuuuuun.github.io</a>
     </h3>
-    <img src={work2} alt="azujuuuuuun.github.io" />
+    <img src={withPrefix('/img/work2.png')} alt="azujuuuuuun.github.io" />
     <p>
       このサイトです。
       Gatsby.jsを使って作っています。
