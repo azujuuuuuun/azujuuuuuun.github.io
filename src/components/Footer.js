@@ -8,7 +8,11 @@ export default props => {
   return (
     <footer style={styles.container}>
       {!isHome && (
-        <Links listStyle={styles.linksList} itemStyle={styles.linksItem} />
+        <Links
+          listStyle={styles.linksList}
+          isFooter
+          itemStyle={styles.linksItem}
+        />
       )}
       <small>©Copyright jun. All rights reserved.</small>
     </footer>

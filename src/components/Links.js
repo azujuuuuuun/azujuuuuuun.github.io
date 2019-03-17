@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 export default props => {
-  const { listStyle, itemStyle, linkStyle } = props
+  const { listStyle, isFooter, itemStyle, linkStyle } = props
   return (
     <ul style={listStyle}>
-      <li style={itemStyle}>
-        <Link to="/" style={linkStyle}>ホーム</Link>
-      </li>
+      {isFooter && (
+        <li style={itemStyle}>
+          <Link to="/" style={linkStyle}>ホーム</Link>
+        </li>
+      )}
       <li style={itemStyle}>
         <Link to="/about" style={linkStyle}>自己紹介</Link>
       </li>
