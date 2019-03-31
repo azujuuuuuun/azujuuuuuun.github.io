@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-export default props => {
+interface Props {
+  listStyle?: object
+  isFooter?: boolean
+  itemStyle?: object
+  linkStyle?: object
+}
+
+export default (props: Props) => {
   const { listStyle, isFooter, itemStyle, linkStyle } = props
   return (
     <ul style={listStyle}>
