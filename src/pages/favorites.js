@@ -36,9 +36,9 @@ export default () => (
     </ul>
     <h2>アニメ</h2>
     <ul>
+      <li>風が強く吹いている</li>
       <li>四月は君の嘘</li>
       <li>SHIROBAKO</li>
-      <li>風が強く吹いている</li>
     </ul>
     <h2>その他</h2>
     <ul>
