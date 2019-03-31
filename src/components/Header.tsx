@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-export default props => {
+interface Props {
+  isHome?: boolean
+}
+
+export default (props: Props) => {
   const { isHome } = props
   return (
     <header>
