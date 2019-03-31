@@ -1,15 +1,12 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
+import Head from '../components/Head'
 import Links from '../components/Links'
 
 export default () => (
   <Layout isHome>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>azujuuuuuun.github.io</title>
-    </Helmet>
+    <Head title="azujuuuuuun.github.io" />
     <p>Hello, world!</p>
     <Links />
   </Layout>

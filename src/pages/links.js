@@ -1,14 +1,11 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
+import Head from '../components/Head'
 
 export default () => (
   <Layout>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>リンク | azujuuuuuun.github.io</title>
-    </Helmet>
+    <Head title="リンク | azujuuuuuun.github.io" />
     <h1>リンク</h1>
     <ul>
       <li>
