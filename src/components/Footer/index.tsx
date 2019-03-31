@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Links from '../components/Links'
-import styles from './FooterStyles'
+import Links from '../../components/Links'
+import styles from './styles'
 
 interface Props {
   isHome?: boolean
