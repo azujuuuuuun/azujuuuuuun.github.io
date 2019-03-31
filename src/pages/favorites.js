@@ -1,14 +1,11 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
+import Head from '../components/Head'
 
 export default () => (
   <Layout>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>好きなもの | azujuuuuuun.github.io</title>
-    </Helmet>
+    <Head title="好きなもの | azujuuuuuun.github.io" />
     <h1>好きなもの</h1>
     <p>漫画と映画とアニメとプログラミングが好きです。</p>
     <h2>漫画</h2>

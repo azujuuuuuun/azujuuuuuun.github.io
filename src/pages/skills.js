@@ -1,15 +1,12 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { withPrefix } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Head from '../components/Head'
 
 export default () => (
   <Layout>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>スキル | azujuuuuuun.github.io</title>
-    </Helmet>
+    <Head title="スキル | azujuuuuuun.github.io" />
     <h1>スキル</h1>
     <h2>Works</h2>
     <h3>
