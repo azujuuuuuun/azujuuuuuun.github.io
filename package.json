@@ -9,8 +9,8 @@
     "develop": "gatsby develop",
     "start": "yarn run develop",
     "serve": "gatsby serve",
-    "lint:js": "yarn run eslint src/**/*.js",
-    "lint": "yarn run lint:js",
+    "lint:ts": "yarn run eslint src/**/*.{ts,tsx}",
+    "lint": "yarn run lint:ts",
     "type-check": "yarn run tsc --noEmit",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "deploy": "gatsby build && gh-pages -d public -b master"
