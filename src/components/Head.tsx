@@ -1,7 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-export default props => {
+interface Props {
+  title: string
+}
+
+export default (props: Props) => {
   const { title } = props
   return (
     <Helmet>
