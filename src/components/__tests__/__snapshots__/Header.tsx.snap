@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header>
+  <a
+    aria-current="page"
+    className=""
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={Object {}}
+  >
+    azujuuuuuun.github.io
+  </a>
+</header>
+`;
