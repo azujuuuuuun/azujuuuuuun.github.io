@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Links renders correctly 1`] = `
+<ul>
+  <li>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      自己紹介
+    </a>
+  </li>
+  <li>
+    <a
+      href="/skills"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      スキル
+    </a>
+  </li>
+  <li>
+    <a
+      href="/favorites"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      好きなもの
+    </a>
+  </li>
+  <li>
+    <a
+      href="/links"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      リンク
+    </a>
+  </li>
+</ul>
+`;
