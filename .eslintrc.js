@@ -43,6 +43,9 @@ module.exports = {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
   },
+  env: {
+    'jest/globals': true
+  },
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 8, // optional, recommended 6+
