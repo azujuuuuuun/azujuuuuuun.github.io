@@ -1,5 +1,4 @@
 import React from 'react'
-import 'jest'
 import renderer from 'react-test-renderer'
 
 import Footer from '../Footer'
