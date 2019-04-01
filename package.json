@@ -12,7 +12,7 @@
     "lint:ts": "yarn run eslint src/**/*.{ts,tsx}",
     "lint": "yarn run lint:ts",
     "type-check": "yarn run tsc --noEmit",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "test": "jest",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
