@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["standard"],
+  extends: ["standard", "plugin:prettier/recommended"],
   plugins: ["standard", "react", "jest"],
   rules: {
     "no-var": "error", // optional, recommended when using es6+
