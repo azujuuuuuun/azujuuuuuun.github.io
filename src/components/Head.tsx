@@ -5,7 +5,7 @@ interface Props {
   title: string;
 }
 
-export default (props: Props) => {
+export default (props: Props): JSX.Element => {
   const { title } = props;
   return (
     <Helmet>

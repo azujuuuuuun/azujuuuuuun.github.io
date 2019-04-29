@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 
-export default () => (
+export default (): JSX.Element => (
   <Layout>
     <Head title="リンク | azujuuuuuun.github.io" />
     <h1>リンク</h1>

@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 
-export default () => (
+export default (): JSX.Element => (
   <Layout>
     <Head title="好きなもの | azujuuuuuun.github.io" />
     <h1>好きなもの</h1>
