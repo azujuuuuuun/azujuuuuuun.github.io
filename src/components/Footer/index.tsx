@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import Links from '../../components/Links'
-import styles from './styles'
+import Links from '../../components/Links';
+import styles from './styles';
 
 interface Props {
-  isHome?: boolean
+  isHome?: boolean;
 }
 
 export default (props: Props) => {
-  const { isHome } = props
+  const { isHome } = props;
   return (
     <footer style={styles.container}>
       {!isHome && (
@@ -20,5 +20,5 @@ export default (props: Props) => {
       )}
       <small>©Copyright jun. All rights reserved.</small>
     </footer>
-  )
-}
+  );
+};

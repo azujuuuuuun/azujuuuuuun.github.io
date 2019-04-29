@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import styles from './styles'
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import styles from './styles';
 
 interface Props {
   isHome?: boolean;
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default ({ isHome, children }: Props) => (
@@ -15,4 +15,4 @@ export default ({ isHome, children }: Props) => (
     {children}
     <Footer isHome={isHome} />
   </div>
-)
+);

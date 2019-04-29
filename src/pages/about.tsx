@@ -1,8 +1,8 @@
-import React from 'react'
-import { withPrefix } from 'gatsby'
+import React from 'react';
+import { withPrefix } from 'gatsby';
 
-import Layout from '../components/Layout'
-import Head from '../components/Head'
+import Layout from '../components/Layout';
+import Head from '../components/Head';
 
 export default () => (
   <Layout>
@@ -14,4 +14,4 @@ export default () => (
       <li>username: jun</li>
     </ul>
   </Layout>
-)
+);

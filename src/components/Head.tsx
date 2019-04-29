@@ -1,16 +1,16 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 interface Props {
-  title: string
+  title: string;
 }
 
 export default (props: Props) => {
-  const { title } = props
+  const { title } = props;
   return (
     <Helmet>
       <meta charSet="utf-8" />
       <title>{title}</title>
     </Helmet>
-  )
-}
+  );
+};

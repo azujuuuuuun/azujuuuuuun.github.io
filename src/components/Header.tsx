@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
 interface Props {
-  isHome?: boolean
+  isHome?: boolean;
 }
 
 export default (props: Props) => {
-  const { isHome } = props
+  const { isHome } = props;
   return (
     <header>
       {isHome ? (
@@ -17,5 +17,5 @@ export default (props: Props) => {
         <Link to="/">azujuuuuuun.github.io</Link>
       )}
     </header>
-  )
-}
+  );
+};
