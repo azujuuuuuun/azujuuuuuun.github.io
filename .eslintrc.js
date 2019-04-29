@@ -1,6 +1,11 @@
 module.exports = {
-  extends: ["standard", "plugin:prettier/recommended"],
-  plugins: ["standard", "react", "jest"],
+  extends: [
+    'standard',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint'
+  ],
+  plugins: ["standard", "react", "jest", '@typescript-eslint'],
   rules: {
     "no-var": "error", // optional, recommended when using es6+
     "no-unused-vars": 1, // recommended
