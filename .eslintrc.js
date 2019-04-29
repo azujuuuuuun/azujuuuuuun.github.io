@@ -46,8 +46,13 @@ module.exports = {
   env: {
     'jest/globals': true
   },
-  parser: "babel-eslint",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 8, // optional, recommended 6+
+    ecmaFeatures: {
+      jsx: true
+    },
+    useJSXTextNode: true, 
+    project: './tsconfig.json',
+    tsconfigRootDir: './'
   },
 }
