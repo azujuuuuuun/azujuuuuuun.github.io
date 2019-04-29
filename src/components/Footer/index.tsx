@@ -7,7 +7,7 @@ interface Props {
   isHome?: boolean;
 }
 
-export default (props: Props) => {
+export default (props: Props): JSX.Element => {
   const { isHome } = props;
   return (
     <footer style={styles.container}>

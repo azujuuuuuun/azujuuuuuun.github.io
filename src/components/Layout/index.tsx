@@ -9,7 +9,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-export default ({ isHome, children }: Props) => (
+export default ({ isHome, children }: Props): JSX.Element => (
   <div style={styles.container}>
     <Header isHome={isHome} />
     {children}

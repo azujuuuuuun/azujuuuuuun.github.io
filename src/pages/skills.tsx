@@ -4,7 +4,7 @@ import { withPrefix } from 'gatsby';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 
-export default () => (
+export default (): JSX.Element => (
   <Layout>
     <Head title="スキル | azujuuuuuun.github.io" />
     <h1>スキル</h1>

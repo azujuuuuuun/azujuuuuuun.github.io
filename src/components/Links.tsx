@@ -8,7 +8,7 @@ interface Props {
   linkStyle?: object;
 }
 
-export default (props: Props) => {
+export default (props: Props): JSX.Element => {
   const { listStyle, isFooter, itemStyle, linkStyle } = props;
   return (
     <ul style={listStyle}>
