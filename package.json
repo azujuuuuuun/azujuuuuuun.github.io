@@ -9,7 +9,7 @@
     "develop": "gatsby develop",
     "start": "yarn run develop",
     "serve": "gatsby serve",
-    "lint:ts": "yarn run eslint src/**/*.{ts,tsx}",
+    "lint:ts": "yarn run eslint . --ext .ts --ext .tsx",
     "lint": "yarn run lint:ts",
     "type-check": "yarn run tsc --noEmit",
     "test": "jest",
