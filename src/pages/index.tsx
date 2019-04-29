@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../components/Layout'
-import Head from '../components/Head'
-import Links from '../components/Links'
+import Layout from '../components/Layout';
+import Head from '../components/Head';
+import Links from '../components/Links';
 
 export default () => (
   <Layout isHome>
@@ -10,4 +10,4 @@ export default () => (
     <p>Hello, world!</p>
     <Links />
   </Layout>
-)
+);

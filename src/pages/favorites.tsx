@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../components/Layout'
-import Head from '../components/Head'
+import Layout from '../components/Layout';
+import Head from '../components/Head';
 
 export default () => (
   <Layout>
@@ -43,4 +43,4 @@ export default () => (
       <li>LAWSONのカフェオレグランデ</li>
     </ul>
   </Layout>
-)
+);

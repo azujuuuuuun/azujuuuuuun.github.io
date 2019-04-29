@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../components/Layout'
-import Head from '../components/Head'
+import Layout from '../components/Layout';
+import Head from '../components/Head';
 
 export default () => (
   <Layout>
@@ -9,20 +9,30 @@ export default () => (
     <h1>リンク</h1>
     <ul>
       <li>
-        <a href="https://github.com/azujuuuuuun" target="_blank">GitHub</a>
+        <a href="https://github.com/azujuuuuuun" target="_blank">
+          GitHub
+        </a>
       </li>
       <li>
-        <a href="https://twitter.com/azujuuuuuun" target="_blank">Twitter</a>
+        <a href="https://twitter.com/azujuuuuuun" target="_blank">
+          Twitter
+        </a>
       </li>
       <li>
-        <a href="https://qiita.com/azujuuuuuun" target="_blank">Qiita</a>
+        <a href="https://qiita.com/azujuuuuuun" target="_blank">
+          Qiita
+        </a>
       </li>
       <li>
-        <a href="https://booklog.jp/users/azujuuuuuun" target="_blank">ブクログ</a>
+        <a href="https://booklog.jp/users/azujuuuuuun" target="_blank">
+          ブクログ
+        </a>
       </li>
       <li>
-        <a href="https://eiga.com/mypage/753513/" target="_blank">映画.com</a>
+        <a href="https://eiga.com/mypage/753513/" target="_blank">
+          映画.com
+        </a>
       </li>
     </ul>
   </Layout>
-)
+);
