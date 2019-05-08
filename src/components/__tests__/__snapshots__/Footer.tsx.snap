@@ -91,6 +91,22 @@ exports[`Footer renders correctly 1`] = `
       }
     >
       <a
+        href="/notes"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        メモ
+      </a>
+    </li>
+    <li
+      style={
+        Object {
+          "display": "inline-block",
+          "marginRight": 16,
+        }
+      }
+    >
+      <a
         href="/links"
         onClick={[Function]}
         onMouseEnter={[Function]}
