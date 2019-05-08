@@ -31,6 +31,15 @@ exports[`Links renders correctly 1`] = `
   </li>
   <li>
     <a
+      href="/notes"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      メモ
+    </a>
+  </li>
+  <li>
+    <a
       href="/links"
       onClick={[Function]}
       onMouseEnter={[Function]}
