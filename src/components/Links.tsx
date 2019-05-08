@@ -35,6 +35,11 @@ export default (props: Props): JSX.Element => {
         </Link>
       </li>
       <li style={itemStyle}>
+        <Link to="/notes" style={linkStyle}>
+          メモ
+        </Link>
+      </li>
+      <li style={itemStyle}>
         <Link to="/links" style={linkStyle}>
           リンク
         </Link>
