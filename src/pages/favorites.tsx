@@ -33,7 +33,9 @@ export default (): JSX.Element => (
     </ul>
     <h2>アニメ</h2>
     <ul>
-      <li>風が強く吹いている</li>
+      <li>
+        <a href="http://kazetsuyo-anime.com/" target="_blank">風が強く吹いている</a>
+      </li>
       <li>四月は君の嘘</li>
       <li>SHIROBAKO</li>
     </ul>
