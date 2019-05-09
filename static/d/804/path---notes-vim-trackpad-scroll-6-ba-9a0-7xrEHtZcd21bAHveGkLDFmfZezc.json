@@ -1,0 +1,1 @@
+{"data":{"markdownRemark":{"html":"<p>Vimでトラックパッドでスクロールできるようにしました。\n<a href=\"https://github.com\">GitHub</a></p>\n<pre><code>set mouse=a\n</code></pre>","frontmatter":{"title":"Vimでトラックパッドでスクロール"}}},"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"/notes/vim-trackpad-scroll/"}}
