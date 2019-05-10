@@ -26,10 +26,16 @@ export default (): JSX.Element => (
     <ul>
       <li>イエスマン “YES”は人生のパスワード</li>
       <li>きっと、うまくいく</li>
-      <li>グレイテスト・ショーマン</li>
+      <li>
+        <a href="http://www.foxmovies-jp.com/greatest-showman/" target="_blank">
+          グレイテスト・ショーマン
+        </a>
+      </li>
       <li>最強のふたり</li>
       <li>世界から猫が消えたなら</li>
-      <li>セッション</li>
+      <li>
+        <a href="http://session.gaga.ne.jp/" target="_blank">セッション</a>
+      </li>
     </ul>
     <h2>アニメ</h2>
     <ul>
