@@ -36,8 +36,12 @@ export default (): JSX.Element => (
       <li>
         <a href="http://kazetsuyo-anime.com/" target="_blank">風が強く吹いている</a>
       </li>
-      <li>四月は君の嘘</li>
-      <li>SHIROBAKO</li>
+      <li>
+        <a href="https://www.kimiuso.jp/" target="_blank">四月は君の嘘</a>
+      </li>
+      <li>
+        <a href="http://shirobako-anime.com/" target="_blank">SHIROBAKO</a>
+      </li>
     </ul>
     <h2>その他</h2>
     <ul>
