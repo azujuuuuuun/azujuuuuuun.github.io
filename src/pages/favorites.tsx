@@ -51,7 +51,14 @@ export default (): JSX.Element => (
     </ul>
     <h2>その他</h2>
     <ul>
-      <li>Red Bull</li>
+      <li>
+        <a
+          href="https://energydrink-jp.redbull.com/red-bull-energy-drink"
+          target="_blank"
+        >
+          Red Bull
+        </a>
+      </li>
       <li>
         <a
           // eslint-disable-next-line max-len
