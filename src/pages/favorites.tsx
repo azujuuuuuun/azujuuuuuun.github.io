@@ -52,7 +52,15 @@ export default (): JSX.Element => (
     <h2>その他</h2>
     <ul>
       <li>Red Bull</li>
-      <li>LAWSONのカフェオレグランデ</li>
+      <li>
+        <a
+          // eslint-disable-next-line max-len
+          href="https://www.lawson.co.jp/recommend/original/detail/1303294_1996.html"
+          target="_blank"
+        >
+          LAWSONのカフェオレグランデ
+        </a>
+      </li>
     </ul>
   </Layout>
 );
