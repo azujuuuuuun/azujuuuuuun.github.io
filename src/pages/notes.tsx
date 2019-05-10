@@ -17,7 +17,6 @@ export default ({ data }): JSX.Element => (
               - {node.frontmatter.published}
             </span>
           </h3>
-          <p>{node.excerpt}</p>
         </Link>
       </div>
     ))}
@@ -37,7 +36,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
         }
       }
     }
