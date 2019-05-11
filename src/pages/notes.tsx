@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
 
-import Layout from '../components/Layout';
+import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 
 export default ({ data }): JSX.Element => (
