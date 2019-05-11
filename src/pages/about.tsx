@@ -1,7 +1,7 @@
 import React from 'react';
 import { withPrefix } from 'gatsby';
 
-import Layout from '../components/Layout';
+import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 
 export default (): JSX.Element => (
