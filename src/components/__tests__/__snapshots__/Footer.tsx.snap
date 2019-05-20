@@ -120,3 +120,17 @@ exports[`Footer renders correctly 1`] = `
   </small>
 </footer>
 `;
+
+exports[`Footer renders isHome prop correctly 1`] = `
+<footer
+  style={
+    Object {
+      "paddingTop": 20,
+    }
+  }
+>
+  <small>
+    ©Copyright jun. All rights reserved.
+  </small>
+</footer>
+`;
