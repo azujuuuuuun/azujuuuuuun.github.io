@@ -49,3 +49,65 @@ exports[`Links renders correctly 1`] = `
   </li>
 </ul>
 `;
+
+exports[`Links renders isFooter prop correctly 1`] = `
+<ul>
+  <li>
+    <a
+      aria-current="page"
+      className=""
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={Object {}}
+    >
+      ホーム
+    </a>
+  </li>
+  <li>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      自己紹介
+    </a>
+  </li>
+  <li>
+    <a
+      href="/skills"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      スキル
+    </a>
+  </li>
+  <li>
+    <a
+      href="/favorites"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      好きなもの
+    </a>
+  </li>
+  <li>
+    <a
+      href="/notes"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      メモ
+    </a>
+  </li>
+  <li>
+    <a
+      href="/links"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      リンク
+    </a>
+  </li>
+</ul>
+`;
