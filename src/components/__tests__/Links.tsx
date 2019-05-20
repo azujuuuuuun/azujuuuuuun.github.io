@@ -8,4 +8,10 @@ describe('Links', (): void => {
     const tree = renderer.create(<Links />).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('renders isFooter prop correctly', (): void => {
+    const props = { isFooter: true };
+    const tree = renderer.create(<Links {...props} />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
