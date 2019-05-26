@@ -4,7 +4,18 @@ import { graphql } from "gatsby";
 import Layout from "../layouts/DefaultLayout";
 import Head from '../components/Head';
 
-export default ({ data }): JSX.Element => {
+interface Props {
+  data: {
+    markdownRemark: {
+      html: string
+      frontmatter: {
+        title: string
+      }
+    }
+  }
+}
+
+export default ({ data }: Props): JSX.Element => {
   const post = data.markdownRemark;
   return (
     <Layout>
