@@ -33,6 +33,11 @@ export default (): JSX.Element => (
           映画.com
         </a>
       </li>
+      <li>
+        <a href="http://animetick.net/users/azujuuuuuun" target="_blank">
+          Animetick
+        </a>
+      </li>
     </ul>
   </Layout>
 );
