@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import locales from '../locales';
+
 interface Props {
   listStyle?: object;
   isFooter?: boolean;
@@ -15,33 +17,33 @@ export default (props: Props): JSX.Element => {
       {isFooter && (
         <li style={itemStyle}>
           <Link to="/" style={linkStyle}>
-            ホーム
+            {locales.home}
           </Link>
         </li>
       )}
       <li style={itemStyle}>
         <Link to="/about" style={linkStyle}>
-          自己紹介
+          {locales.selfIntroduction}
         </Link>
       </li>
       <li style={itemStyle}>
         <Link to="/skills" style={linkStyle}>
-          スキル
+          {locales.skill}
         </Link>
       </li>
       <li style={itemStyle}>
         <Link to="/favorites" style={linkStyle}>
-          好きなもの
+          {locales.favorite}
         </Link>
       </li>
       <li style={itemStyle}>
         <Link to="/notes" style={linkStyle}>
-          メモ
+          {locales.note}
         </Link>
       </li>
       <li style={itemStyle}>
         <Link to="/links" style={linkStyle}>
-          リンク
+          {locales.link}
         </Link>
       </li>
     </ul>

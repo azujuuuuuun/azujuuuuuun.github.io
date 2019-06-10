@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
+import locales from '../locales';
 
 interface Props {
   data: {
@@ -26,7 +27,7 @@ interface Props {
 export default ({ data }: Props): JSX.Element => (
   <Layout>
     <Head title="メモ | azujuuuuuun.github.io" />
-    <h1>メモ</h1>
+    <h1>{locales.note}</h1>
     {data.allMarkdownRemark.edges.map(({ node }): JSX.Element => (
       <div key={node.id}>
         <Link to={node.fields.slug}>

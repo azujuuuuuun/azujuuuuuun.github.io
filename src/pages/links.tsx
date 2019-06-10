@@ -2,11 +2,12 @@ import React from 'react';
 
 import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
+import locales from '../locales';
 
 export default (): JSX.Element => (
   <Layout>
     <Head title="リンク | azujuuuuuun.github.io" />
-    <h1>リンク</h1>
+    <h1>{locales.link}</h1>
     <ul>
       <li>
         <a href="https://github.com/azujuuuuuun" target="_blank">
