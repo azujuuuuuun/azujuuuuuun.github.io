@@ -3,29 +3,27 @@ import { withPrefix } from 'gatsby';
 
 import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
+import locales from '../locales';
 
 export default (): JSX.Element => (
   <Layout>
     <Head title="スキル | azujuuuuuun.github.io" />
-    <h1>スキル</h1>
-    <h2>Works</h2>
+    <h1>{locales.skill}</h1>
+    <h2>{locales.works}</h2>
     <h3>
       <a href="http://wkd.main.jp" target="_blank">
-        早稲田大学弓道同好会ホームページ
+        {locales.work1Name}
       </a>
     </h3>
     <img
       src={withPrefix('/img/work1.png')}
-      alt="早稲田大学弓道同好会ホームページ"
+      alt={locales.work1Name}
     />
-    <p>
-      早稲田大学弓道同好会のホームページです。 Bootstrapを使って作りました。
-      現在はサークルの後輩が更新しています。
-    </p>
+    <p>{locales.work1Description}</p>
     <h3>
-      <a href="https://azujuuuuuun.github.io">azujuuuuuun.github.io</a>
+      <a href="https://azujuuuuuun.github.io">{locales.work2Name}</a>
     </h3>
-    <img src={withPrefix('/img/work2.png')} alt="azujuuuuuun.github.io" />
-    <p>このサイトです。 Gatsby.jsを使って作っています。</p>
+    <img src={withPrefix('/img/work2.png')} alt={locales.work2Name} />
+    <p>{locales.work2Description}</p>
   </Layout>
 );
