@@ -10,12 +10,13 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: install
-        run: |
-          yarn install
-      - name: build
-        run: |
-          yarn run build
+
+      - run: yarn install
+      - run: yarn run lint
+      - run: yarn run type-check
+      - run: yarn run test
+      - run: yarn run build
+
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
