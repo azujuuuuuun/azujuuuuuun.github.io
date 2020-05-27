@@ -11,7 +11,7 @@
     "serve": "gatsby serve",
     "lint:ts": "yarn run eslint . --ext .ts --ext .tsx",
     "lint": "yarn run lint:ts",
-    "type-check": "yarn run tsc --noEmit",
+    "type-check": "yarn run tsc --noEmit --skipLibCheck",
     "test": "jest",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@types/jest": "24.0.15",
+    "@types/react-dom": "16.9.8",
     "@types/react-helmet": "5.0.8",
     "@types/react-test-renderer": "16.8.2",
     "@types/typography": "0.16.2",
