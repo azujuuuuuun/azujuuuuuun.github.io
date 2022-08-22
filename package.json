@@ -9,9 +9,9 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "lint:ts": "npm run eslint . --ext .ts --ext .tsx",
+    "lint:ts": "npx eslint . --ext .ts --ext .tsx",
     "lint": "npm run lint:ts",
-    "type-check": "npm run tsc --noEmit --skipLibCheck",
+    "type-check": "npx tsc --noEmit --skipLibCheck",
     "test": "jest",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
@@ -74,7 +74,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run eslint --fix",
+      "npx eslint --fix",
       "git add"
     ]
   }
