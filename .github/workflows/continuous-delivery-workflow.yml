@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: yarn install
-      - run: yarn run lint
-      - run: yarn run type-check
-      - run: yarn run test
-      - run: yarn run build
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run type-check
+      - run: npm run test
+      - run: npm run build
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3

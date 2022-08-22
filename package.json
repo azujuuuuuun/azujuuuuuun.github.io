@@ -7,11 +7,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "yarn run develop",
+    "start": "npm run develop",
     "serve": "gatsby serve",
-    "lint:ts": "yarn run eslint . --ext .ts --ext .tsx",
-    "lint": "yarn run lint:ts",
-    "type-check": "yarn run tsc --noEmit --skipLibCheck",
+    "lint:ts": "npx eslint . --ext .ts --ext .tsx",
+    "lint": "npm run lint:ts",
+    "type-check": "npx tsc --noEmit --skipLibCheck",
     "test": "jest",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
@@ -42,21 +42,12 @@
     "@types/react-helmet": "5.0.8",
     "@types/react-test-renderer": "18.0.0",
     "@types/typography": "0.16.2",
-    "@typescript-eslint/eslint-plugin": "1.10.2",
-    "@typescript-eslint/parser": "1.10.2",
-    "babel-eslint": "10.0.2",
+    "@typescript-eslint/eslint-plugin": "5.33.1",
+    "@typescript-eslint/parser": "5.33.1",
     "babel-jest": "24.9.0",
     "babel-preset-gatsby": "0.12.3",
-    "eslint": "5.16.0",
-    "eslint-config-prettier": "4.3.0",
-    "eslint-config-standard": "12.0.0",
-    "eslint-plugin-import": "2.17.3",
-    "eslint-plugin-jest": "26.8.7",
-    "eslint-plugin-node": "8.0.1",
-    "eslint-plugin-prettier": "3.1.0",
-    "eslint-plugin-promise": "4.1.1",
+    "eslint": "8.22.0",
     "eslint-plugin-react": "7.30.1",
-    "eslint-plugin-standard": "4.0.0",
     "gh-pages": "2.0.1",
     "husky": "2.7.0",
     "jest": "24.9.0",
@@ -69,12 +60,12 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check && yarn run test"
+      "pre-push": "npm run type-check && npm run test"
     }
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn run eslint --fix",
+      "npx eslint --fix",
       "git add"
     ]
   }

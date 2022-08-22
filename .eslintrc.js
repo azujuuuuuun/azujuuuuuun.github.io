@@ -1,63 +1,24 @@
 module.exports = {
-  extends: [
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'prettier/@typescript-eslint'
-  ],
-  plugins: ["standard", "react", "jest", '@typescript-eslint'],
-  rules: {
-    "no-var": "error", // optional, recommended when using es6+
-    "no-unused-vars": 1, // recommended
-    "arrow-spacing": ["error", { before: true, after: true }], // recommended
-    indent: ["error", 2],
-    "comma-dangle": [
-      "error",
-      {
-        objects: "only-multiline",
-        arrays: "only-multiline",
-        imports: "never",
-        exports: "never",
-        functions: "never",
-      },
-    ],
-
-    // options to emulate prettier setup
-    semi: ["error", "always"],
-    "max-len": ["error", { code: 80, ignoreComments: true }],
-    "template-curly-spacing": ["error", "never"],
-    "arrow-parens": ["error", "as-needed"],
-
-    // standard.js
-    "space-before-function-paren": [
-      "error",
-      {
-        named: "always",
-        anonymous: "always",
-        asyncArrow: "always",
-      },
-    ],
-
-    // standard plugin - options
-    "standard/object-curly-even-spacing": ["error", "either"],
-    "standard/array-bracket-even-spacing": ["error", "either"],
-    "standard/computed-property-even-spacing": ["error", "even"],
-    "standard/no-callback-literal": ["error", ["cb", "callback"]],
-
-    // react plugin - options
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-  },
   env: {
-    'jest/globals': true
+    browser: true,
+    es2021: true,
+    node: true,
   },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    useJSXTextNode: true, 
-    project: './tsconfig.json',
-    tsconfigRootDir: './'
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-}
+  plugins: ['react', '@typescript-eslint'],
+  rules: {
+    // FIXME: Turn these rules on
+    'react/display-name': 'off',
+    'react/jsx-no-target-blank': 'off',
+  },
+};
