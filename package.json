@@ -7,11 +7,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "yarn run develop",
+    "start": "npm run develop",
     "serve": "gatsby serve",
-    "lint:ts": "yarn run eslint . --ext .ts --ext .tsx",
-    "lint": "yarn run lint:ts",
-    "type-check": "yarn run tsc --noEmit --skipLibCheck",
+    "lint:ts": "npm run eslint . --ext .ts --ext .tsx",
+    "lint": "npm run lint:ts",
+    "type-check": "npm run tsc --noEmit --skipLibCheck",
     "test": "jest",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
@@ -69,12 +69,12 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check && yarn run test"
+      "pre-push": "npm run type-check && npm run test"
     }
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn run eslint --fix",
+      "npm run eslint --fix",
       "git add"
     ]
   }
