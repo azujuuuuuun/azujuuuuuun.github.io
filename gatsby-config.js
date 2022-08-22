@@ -19,7 +19,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`
+            resolve: `gatsby-remark-prismjs`,
           },
           {
             resolve: `gatsby-remark-images`,
@@ -42,22 +42,10 @@ module.exports = {
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
-      }
+      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-128961201-4',
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-      }
-    },
-    'gatsby-plugin-typescript'
-  ]
+    'gatsby-plugin-typescript',
+  ],
 };
