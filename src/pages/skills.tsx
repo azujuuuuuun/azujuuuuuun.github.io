@@ -11,7 +11,7 @@ const SkillsPage: React.VFC = () => (
     <h1>{locales.skill}</h1>
     <h2>{locales.works}</h2>
     <h3>
-      <a href="http://wkd.main.jp" target="_blank">
+      <a href="http://wkd.main.jp" target="_blank" rel="noreferrer noopener">
         {locales.work1Name}
       </a>
     </h3>

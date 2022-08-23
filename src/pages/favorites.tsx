@@ -28,14 +28,22 @@ const FavoritesPage: React.VFC = () => (
       <li>{locales.movie1}</li>
       <li>{locales.movie2}</li>
       <li>
-        <a href="http://www.foxmovies-jp.com/greatest-showman/" target="_blank">
+        <a
+          href="http://www.foxmovies-jp.com/greatest-showman/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {locales.movie3}
         </a>
       </li>
       <li>{locales.movie4}</li>
       <li>{locales.movie5}</li>
       <li>
-        <a href="http://session.gaga.ne.jp/" target="_blank">
+        <a
+          href="http://session.gaga.ne.jp/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {locales.movie6}
         </a>
       </li>
@@ -43,17 +51,29 @@ const FavoritesPage: React.VFC = () => (
     <h2>{locales.anime}</h2>
     <ul>
       <li>
-        <a href="http://kazetsuyo-anime.com/" target="_blank">
+        <a
+          href="http://kazetsuyo-anime.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {locales.anime1}
         </a>
       </li>
       <li>
-        <a href="https://www.kimiuso.jp/" target="_blank">
+        <a
+          href="https://www.kimiuso.jp/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {locales.anime2}
         </a>
       </li>
       <li>
-        <a href="http://shirobako-anime.com/" target="_blank">
+        <a
+          href="http://shirobako-anime.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {locales.anime3}
         </a>
       </li>
@@ -64,6 +84,7 @@ const FavoritesPage: React.VFC = () => (
         <a
           href="https://energydrink-jp.redbull.com/red-bull-energy-drink"
           target="_blank"
+          rel="noreferrer noopener"
         >
           {locales.other1}
         </a>
@@ -73,6 +94,7 @@ const FavoritesPage: React.VFC = () => (
           // eslint-disable-next-line max-len
           href="https://www.lawson.co.jp/recommend/original/detail/1303294_1996.html"
           target="_blank"
+          rel="noreferrer noopener"
         >
           {locales.other2}
         </a>

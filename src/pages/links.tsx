@@ -10,32 +10,56 @@ const LinksPage: React.VFC = () => (
     <h1>{locales.link}</h1>
     <ul>
       <li>
-        <a href="https://github.com/azujuuuuuun" target="_blank">
+        <a
+          href="https://github.com/azujuuuuuun"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           GitHub
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/azujuuuuuun" target="_blank">
+        <a
+          href="https://twitter.com/azujuuuuuun"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Twitter
         </a>
       </li>
       <li>
-        <a href="https://qiita.com/azujuuuuuun" target="_blank">
+        <a
+          href="https://qiita.com/azujuuuuuun"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Qiita
         </a>
       </li>
       <li>
-        <a href="https://booklog.jp/users/azujuuuuuun" target="_blank">
+        <a
+          href="https://booklog.jp/users/azujuuuuuun"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           ブクログ
         </a>
       </li>
       <li>
-        <a href="https://eiga.com/mypage/753513/" target="_blank">
+        <a
+          href="https://eiga.com/mypage/753513/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           映画.com
         </a>
       </li>
       <li>
-        <a href="http://animetick.net/users/azujuuuuuun" target="_blank">
+        <a
+          href="http://animetick.net/users/azujuuuuuun"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Animetick
         </a>
       </li>
