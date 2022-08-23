@@ -26,7 +26,6 @@ export default {
   movie4: '最強のふたり',
   movie5: '世界から猫が消えたなら',
   movie6: 'セッション',
-  note: 'メモ',
   other: 'その他',
   other1: 'Red Bull',
   other2: 'LAWSONのカフェオレグランデ',

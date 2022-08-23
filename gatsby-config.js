@@ -15,22 +15,6 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'azujuuuuuun.github.io',
