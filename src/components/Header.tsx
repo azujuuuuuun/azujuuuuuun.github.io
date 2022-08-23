@@ -7,7 +7,7 @@ interface Props {
   isHome?: boolean;
 }
 
-export default (props: Props): JSX.Element => {
+const Header: React.VFC<Props> = props => {
   const { isHome } = props;
   return (
     <header>
@@ -21,3 +21,5 @@ export default (props: Props): JSX.Element => {
     </header>
   );
 };
+
+export default Header;

@@ -1,21 +1,21 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../layouts/DefaultLayout";
+import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 
 interface Props {
   data: {
     markdownRemark: {
-      html: string
+      html: string;
       frontmatter: {
-        title: string
-      }
-    }
-  }
+        title: string;
+      };
+    };
+  };
 }
 
-export default ({ data }: Props): JSX.Element => {
+const NoteTemplate: React.VFC<Props> = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout>
@@ -38,3 +38,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default NoteTemplate;

@@ -5,7 +5,7 @@ import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 import locales from '../locales';
 
-export default (): JSX.Element => (
+const AboutPage: React.VFC = () => (
   <Layout>
     <Head title="自己紹介 | azujuuuuuun.github.io" />
     <h1>{locales.selfIntroduction}</h1>
@@ -16,3 +16,5 @@ export default (): JSX.Element => (
     </ul>
   </Layout>
 );
+
+export default AboutPage;

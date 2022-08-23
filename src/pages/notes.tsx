@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from "gatsby";
+import { Link, graphql } from 'gatsby';
 
 import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
@@ -10,36 +10,36 @@ interface Props {
     allMarkdownRemark: {
       edges: {
         node: {
-          id: string
+          id: string;
           frontmatter: {
-            title: string
-            published: string
-          }
+            title: string;
+            published: string;
+          };
           fields: {
-            slug: string
-          }
-        }
-      }[]
-    }
-  }
+            slug: string;
+          };
+        };
+      }[];
+    };
+  };
 }
 
-export default ({ data }: Props): JSX.Element => (
+const NotesPage: React.VFC<Props> = ({ data }) => (
   <Layout>
     <Head title="メモ | azujuuuuuun.github.io" />
     <h1>{locales.note}</h1>
-    {data.allMarkdownRemark.edges.map(({ node }): JSX.Element => (
-      <div key={node.id}>
-        <Link to={node.fields.slug}>
-          <h3>
-            {node.frontmatter.title}{' '}
-            <span>
-              - {node.frontmatter.published}
-            </span>
-          </h3>
-        </Link>
-      </div>
-    ))}
+    {data.allMarkdownRemark.edges.map(
+      ({ node }): JSX.Element => (
+        <div key={node.id}>
+          <Link to={node.fields.slug}>
+            <h3>
+              {node.frontmatter.title}{' '}
+              <span>- {node.frontmatter.published}</span>
+            </h3>
+          </Link>
+        </div>
+      )
+    )}
   </Layout>
 );
 
@@ -61,3 +61,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default NotesPage;

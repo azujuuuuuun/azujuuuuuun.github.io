@@ -5,7 +5,7 @@ interface Props {
   title: string;
 }
 
-export default (props: Props): JSX.Element => {
+const Head: React.VFC<Props> = props => {
   const { title } = props;
   return (
     <Helmet>
@@ -14,3 +14,5 @@ export default (props: Props): JSX.Element => {
     </Helmet>
   );
 };
+
+export default Head;

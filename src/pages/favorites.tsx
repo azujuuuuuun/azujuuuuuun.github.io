@@ -4,7 +4,7 @@ import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 import locales from '../locales';
 
-export default (): JSX.Element => (
+const FavoritesPage: React.VFC = () => (
   <Layout>
     <Head title="好きなもの | azujuuuuuun.github.io" />
     <h1>{locales.favorite}</h1>
@@ -48,7 +48,9 @@ export default (): JSX.Element => (
         </a>
       </li>
       <li>
-        <a href="https://www.kimiuso.jp/" target="_blank">{locales.anime2}</a>
+        <a href="https://www.kimiuso.jp/" target="_blank">
+          {locales.anime2}
+        </a>
       </li>
       <li>
         <a href="http://shirobako-anime.com/" target="_blank">
@@ -78,3 +80,5 @@ export default (): JSX.Element => (
     </ul>
   </Layout>
 );
+
+export default FavoritesPage;

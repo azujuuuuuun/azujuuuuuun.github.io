@@ -4,7 +4,7 @@ import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 import locales from '../locales';
 
-export default (): JSX.Element => (
+const LinksPage: React.VFC = () => (
   <Layout>
     <Head title="リンク | azujuuuuuun.github.io" />
     <h1>{locales.link}</h1>
@@ -42,3 +42,5 @@ export default (): JSX.Element => (
     </ul>
   </Layout>
 );
+
+export default LinksPage;

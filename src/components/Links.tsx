@@ -10,7 +10,7 @@ interface Props {
   linkStyle?: object;
 }
 
-export default (props: Props): JSX.Element => {
+const Links: React.VFC<Props> = props => {
   const { listStyle, isFooter, itemStyle, linkStyle } = props;
   return (
     <ul style={listStyle}>
@@ -49,3 +49,5 @@ export default (props: Props): JSX.Element => {
     </ul>
   );
 };
+
+export default Links;
