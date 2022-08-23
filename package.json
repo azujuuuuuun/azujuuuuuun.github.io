@@ -1,8 +1,7 @@
 {
   "name": "azujuuuuuun.github.io",
-  "private": true,
-  "description": "azujuuuuuun.github.io",
   "version": "0.1.0",
+  "description": "azujuuuuuun.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
@@ -29,6 +28,7 @@
     "prettier": "2.7.1",
     "typescript": "4.7.4"
   },
+  "private": true,
   "lint-staged": {
     "*.{ts,tsx}": [
       "npx eslint --fix",
