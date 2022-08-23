@@ -1,10 +1,12 @@
 import React from "react";
-import styles from "./styles";
+import styles from "./index.module.scss";
 
 const Footer: React.FC = () => {
   return (
-    <footer style={styles.container}>
-      <small>©Copyright jun. All rights reserved.</small>
+    <footer className={styles.Footer}>
+      <small className={styles.Footer__copyright}>
+        ©Copyright jun. All rights reserved.
+      </small>
     </footer>
   );
 };
