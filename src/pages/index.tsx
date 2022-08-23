@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
+import Avatar from "@/components/Avatar";
 import Footer from "@/components/Footer";
 
 const HomePage: React.FC = () => {
@@ -24,14 +25,12 @@ const HomePage: React.FC = () => {
           <p>Hello, world!</p>
           <section>
             <h2>About</h2>
-            <picture>
-              <img
-                src="/img/avatar.jpg"
-                alt="アバター"
-                width={300}
-                height={300}
-              />
-            </picture>
+            <Avatar
+              src="/img/avatar.jpg"
+              alt="アバター"
+              width={1048}
+              height={1048}
+            />
             <dl>
               <dt>userId</dt>
               <dd>azujuuuuuun</dd>
