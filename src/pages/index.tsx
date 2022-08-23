@@ -68,6 +68,15 @@ const HomePage: React.FC = () => {
                   Twitter
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://azujuuuuuun.hatenablog.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Blog
+                </a>
+              </li>
             </ul>
           </section>
         </main>
