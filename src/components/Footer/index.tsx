@@ -7,7 +7,7 @@ interface Props {
   isHome?: boolean;
 }
 
-export default (props: Props): JSX.Element => {
+const Footer: React.VFC<Props> = props => {
   const { isHome } = props;
   return (
     <footer style={styles.container}>
@@ -22,3 +22,5 @@ export default (props: Props): JSX.Element => {
     </footer>
   );
 };
+
+export default Footer;

@@ -16,9 +16,10 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
-  rules: {
-    // FIXME: Turn these rules on
-    'react/display-name': 'off',
-    'react/jsx-no-target-blank': 'off',
+  rules: {},
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

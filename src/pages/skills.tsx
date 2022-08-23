@@ -5,20 +5,17 @@ import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 import locales from '../locales';
 
-export default (): JSX.Element => (
+const SkillsPage: React.VFC = () => (
   <Layout>
     <Head title="スキル | azujuuuuuun.github.io" />
     <h1>{locales.skill}</h1>
     <h2>{locales.works}</h2>
     <h3>
-      <a href="http://wkd.main.jp" target="_blank">
+      <a href="http://wkd.main.jp" target="_blank" rel="noreferrer noopener">
         {locales.work1Name}
       </a>
     </h3>
-    <img
-      src={withPrefix('/img/work1.png')}
-      alt={locales.work1Name}
-    />
+    <img src={withPrefix('/img/work1.png')} alt={locales.work1Name} />
     <p>{locales.work1Description}</p>
     <h3>
       <a href="https://azujuuuuuun.github.io">{locales.work2Name}</a>
@@ -27,3 +24,5 @@ export default (): JSX.Element => (
     <p>{locales.work2Description}</p>
   </Layout>
 );
+
+export default SkillsPage;

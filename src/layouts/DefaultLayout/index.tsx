@@ -6,13 +6,14 @@ import styles from './styles';
 
 interface Props {
   isHome?: boolean;
-  children: React.ReactNode;
 }
 
-export default ({ isHome, children }: Props): JSX.Element => (
+const DefaultLayout: React.FC<Props> = ({ isHome, children }) => (
   <div style={styles.container}>
     <Header isHome={isHome} />
     {children}
     <Footer isHome={isHome} />
   </div>
 );
+
+export default DefaultLayout;
