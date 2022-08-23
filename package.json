@@ -39,5 +39,9 @@
       "npx eslint --fix",
       "git add"
     ]
+  },
+  "volta": {
+    "node": "18.7.0",
+    "npm": "8.18.0"
   }
 }
