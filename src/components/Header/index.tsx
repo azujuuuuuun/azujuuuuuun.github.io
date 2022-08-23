@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./index.module.scss";
 
 const Header: React.FC = () => {
   return (
     <header>
-      <h1>azujuuuuuun.github.io</h1>
+      <h1 className={styles.Header__title}>azujuuuuuun.github.io</h1>
     </header>
   );
 };
