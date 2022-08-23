@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{"57co":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),r=a.n(n),u=a("Co5O"),l=a("9u5D");t.default=function(e){var t=e.data.markdownRemark;return r.a.createElement(u.a,null,r.a.createElement(l.a,{title:t.frontmatter.title+" | azujuuuuuun.github.io"}),r.a.createElement("div",null,r.a.createElement("h1",null,t.frontmatter.title),r.a.createElement("div",{dangerouslySetInnerHTML:{__html:t.html}})))}}}]);
-//# sourceMappingURL=component---src-templates-note-tsx-75500655ba4cc6392e87.js.map
