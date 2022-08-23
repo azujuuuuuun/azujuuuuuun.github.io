@@ -27,11 +27,6 @@ const Links: React.VFC<Props> = props => {
         </Link>
       </li>
       <li style={itemStyle}>
-        <Link to="/skills" style={linkStyle}>
-          {locales.skill}
-        </Link>
-      </li>
-      <li style={itemStyle}>
         <Link to="/favorites" style={linkStyle}>
           {locales.favorite}
         </Link>

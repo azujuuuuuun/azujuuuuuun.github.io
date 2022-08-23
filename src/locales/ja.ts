@@ -32,11 +32,4 @@ export default {
   other2: 'LAWSONのカフェオレグランデ',
   selfIntroduction: '自己紹介',
   siteName: 'azujuuuuuun.github.io',
-  skill: 'スキル',
-  work1Name: '早稲田大学弓道同好会ホームページ',
-  work1Description:
-    '早稲田大学弓道同好会のホームページです。 Bootstrapを使って作りました。\n現在はサークルの後輩が更新しています。',
-  work2Name: 'azujuuuuuun.github.io',
-  work2Description: 'このサイトです。 Gatsby.jsを使って作っています。',
-  works: 'Works',
 };
