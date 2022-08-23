@@ -3,59 +3,34 @@
   "private": true,
   "description": "azujuuuuuun.github.io",
   "version": "0.1.0",
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "lint:ts": "npx eslint . --ext .ts --ext .tsx",
-    "lint": "npm run lint:ts",
-    "type-check": "npx tsc --noEmit --skipLibCheck",
-    "test": "jest",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "dev": "next dev",
+    "build": "next build && export",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "gatsby": "2.32.13",
-    "gatsby-plugin-manifest": "2.12.1",
-    "gatsby-plugin-offline": "2.2.10",
-    "gatsby-plugin-react-helmet": "3.10.0",
-    "gatsby-plugin-sharp": "2.14.4",
-    "gatsby-plugin-typescript": "2.12.1",
-    "gatsby-plugin-typography": "2.12.0",
-    "gatsby-source-filesystem": "2.11.1",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
-    "react-helmet": "5.2.1",
-    "react-typography": "0.16.20",
-    "typography": "0.16.21",
-    "typography-theme-github": "0.16.19"
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/jest": "24.9.1",
+    "@types/node": "18.7.11",
+    "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "@types/react-helmet": "5.0.8",
-    "@types/react-test-renderer": "18.0.0",
-    "@types/typography": "0.16.2",
     "@typescript-eslint/eslint-plugin": "5.33.1",
     "@typescript-eslint/parser": "5.33.1",
-    "babel-jest": "24.9.0",
-    "babel-preset-gatsby": "0.12.3",
     "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
     "eslint-plugin-react": "7.30.1",
-    "gh-pages": "2.0.1",
-    "husky": "2.7.0",
-    "jest": "24.9.0",
-    "lint-staged": "8.2.1",
-    "prettier": "1.18.2",
-    "react-test-renderer": "16.14.0",
-    "ts-jest": "24.0.2",
-    "typescript": "3.8.3"
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run type-check && npm run test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {

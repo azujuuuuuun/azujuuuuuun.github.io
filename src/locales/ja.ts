@@ -1,4 +1,4 @@
-export default {
+const ja = {
   anime: 'アニメ',
   anime1: '風が強く吹いている',
   anime2: '四月は君の嘘',
@@ -32,3 +32,5 @@ export default {
   selfIntroduction: '自己紹介',
   siteName: 'azujuuuuuun.github.io',
 };
+
+export default ja;

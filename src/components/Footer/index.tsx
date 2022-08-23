@@ -7,7 +7,7 @@ interface Props {
   isHome?: boolean;
 }
 
-const Footer: React.VFC<Props> = props => {
+const Footer: React.FC<Props> = props => {
   const { isHome } = props;
   return (
     <footer style={styles.container}>

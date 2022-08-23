@@ -4,7 +4,7 @@ import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 import locales from '../locales';
 
-const LinksPage: React.VFC = () => (
+const LinksPage: React.FC = () => (
   <Layout>
     <Head title="リンク | azujuuuuuun.github.io" />
     <h1>{locales.link}</h1>
