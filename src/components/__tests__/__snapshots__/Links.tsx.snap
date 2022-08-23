@@ -13,29 +13,11 @@ exports[`Links renders correctly 1`] = `
   </li>
   <li>
     <a
-      href="/skills"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      スキル
-    </a>
-  </li>
-  <li>
-    <a
       href="/favorites"
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
       好きなもの
-    </a>
-  </li>
-  <li>
-    <a
-      href="/notes"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      メモ
     </a>
   </li>
   <li>
@@ -75,29 +57,11 @@ exports[`Links renders isFooter prop correctly 1`] = `
   </li>
   <li>
     <a
-      href="/skills"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      スキル
-    </a>
-  </li>
-  <li>
-    <a
       href="/favorites"
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
       好きなもの
-    </a>
-  </li>
-  <li>
-    <a
-      href="/notes"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      メモ
     </a>
   </li>
   <li>
