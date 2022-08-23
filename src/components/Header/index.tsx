@@ -1,17 +1,10 @@
 import React from "react";
+import styles from "./index.module.scss";
 
 const Header: React.FC = () => {
   return (
     <header>
-      <h1
-        style={{
-          fontSize: "3.2rem",
-          fontWeight: "bold",
-          overflowWrap: "break-word",
-        }}
-      >
-        azujuuuuuun.github.io
-      </h1>
+      <h1 className={styles.Header__title}>azujuuuuuun.github.io</h1>
     </header>
   );
 };
