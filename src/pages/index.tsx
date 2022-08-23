@@ -17,37 +17,53 @@ const HomePage: React.FC = () => {
         style={{
           margin: `3rem auto`,
           maxWidth: 650,
-          padding: `0 1rem`,
+          padding: `0 24px`,
         }}
       >
         <Header />
         <main>
-          <section>
-            <h2>About</h2>
-            <Avatar
-              src="/img/avatar.jpg"
-              alt="アバター"
-              width={1048}
-              height={1048}
-            />
-            <dl>
-              <dt>userId</dt>
-              <dd>azujuuuuuun</dd>
-              <dt>username</dt>
-              <dd>jun</dd>
-            </dl>
+          <section style={{ marginTop: "40px" }}>
+            <h2 style={{ fontSize: "2.4rem", fontWeight: "bold" }}>About</h2>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "12px",
+              }}
+            >
+              <Avatar
+                src="/img/avatar.jpg"
+                alt="アバター"
+                width={1048}
+                height={1048}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginLeft: "16px",
+                }}
+              >
+                <span style={{ fontSize: "1.8rem", fontWeight: "bold" }}>
+                  jun
+                </span>
+                <span>azujuuuuuun</span>
+              </div>
+            </div>
           </section>
-          <section>
-            <h2>Favorite</h2>
-            <ul>
+          <section style={{ marginTop: "40px" }}>
+            <h2 style={{ fontSize: "2.4rem", fontWeight: "bold" }}>Favorite</h2>
+            <ul
+              style={{ listStyle: "none", display: "flex", marginTop: "12px" }}
+            >
               <li>Manga</li>
-              <li>Anime</li>
-              <li>Programming</li>
+              <li style={{ marginLeft: "8px" }}>Anime</li>
+              <li style={{ marginLeft: "8px" }}>Programming</li>
             </ul>
           </section>
-          <section>
-            <h2>Link</h2>
-            <ul>
+          <section style={{ marginTop: "40px" }}>
+            <h2 style={{ fontSize: "2.4rem", fontWeight: "bold" }}>Link</h2>
+            <ul style={{ marginTop: "12px" }}>
               <li>
                 <a
                   href="https://github.com/azujuuuuuun"
@@ -57,7 +73,7 @@ const HomePage: React.FC = () => {
                   GitHub
                 </a>
               </li>
-              <li>
+              <li style={{ marginTop: "8px" }}>
                 <a
                   href="https://twitter.com/azujuuuuuun"
                   target="_blank"
@@ -66,7 +82,7 @@ const HomePage: React.FC = () => {
                   Twitter
                 </a>
               </li>
-              <li>
+              <li style={{ marginTop: "8px" }}>
                 <a
                   href="https://azujuuuuuun.hatenablog.com"
                   target="_blank"
