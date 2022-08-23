@@ -1,17 +1,17 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import NextHead from 'next/head';
 
 interface Props {
   title: string;
 }
 
-const Head: React.VFC<Props> = props => {
+const Head: React.FC<Props> = props => {
   const { title } = props;
   return (
-    <Helmet>
+    <NextHead>
       <meta charSet="utf-8" />
       <title>{title}</title>
-    </Helmet>
+    </NextHead>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Link from 'next/link';
 
 import locales from '../locales';
 
@@ -7,16 +7,16 @@ interface Props {
   isHome?: boolean;
 }
 
-const Header: React.VFC<Props> = props => {
+const Header: React.FC<Props> = props => {
   const { isHome } = props;
   return (
     <header>
       {isHome ? (
         <h1>
-          <Link to="/">{locales.siteName}</Link>
+          <Link href="/">{locales.siteName}</Link>
         </h1>
       ) : (
-        <Link to="/">{locales.siteName}</Link>
+        <Link href="/">{locales.siteName}</Link>
       )}
     </header>
   );

@@ -4,7 +4,7 @@ import Layout from '../layouts/DefaultLayout';
 import Head from '../components/Head';
 import locales from '../locales';
 
-const FavoritesPage: React.VFC = () => (
+const FavoritesPage: React.FC = () => (
   <Layout>
     <Head title="好きなもの | azujuuuuuun.github.io" />
     <h1>{locales.favorite}</h1>
