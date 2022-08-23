@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-import locales from '../locales';
+import locales from "../locales";
 
 interface Props {
   listStyle?: object;
@@ -10,7 +10,7 @@ interface Props {
   linkStyle?: object;
 }
 
-const Links: React.FC<Props> = props => {
+const Links: React.FC<Props> = (props) => {
   const { listStyle, isFooter, itemStyle, linkStyle } = props;
   return (
     <ul style={listStyle}>

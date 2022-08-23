@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Links from '../../components/Links';
-import styles from './styles';
+import Links from "../../components/Links";
+import styles from "./styles";
 
 interface Props {
   isHome?: boolean;
 }
 
-const Footer: React.FC<Props> = props => {
+const Footer: React.FC<Props> = (props) => {
   const { isHome } = props;
   return (
     <footer style={styles.container}>

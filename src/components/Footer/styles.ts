@@ -6,7 +6,7 @@ const styles = {
     margin: 0,
   },
   linksItem: {
-    display: 'inline-block',
+    display: "inline-block",
     marginRight: 16,
   },
 };

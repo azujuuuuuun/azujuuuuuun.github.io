@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import Layout from '../layouts/DefaultLayout';
-import Head from '../components/Head';
-import locales from '../locales';
+import Layout from "../layouts/DefaultLayout";
+import Head from "../components/Head";
+import locales from "../locales";
 
 const AboutPage: React.FC = () => (
   <Layout>
