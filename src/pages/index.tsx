@@ -22,7 +22,6 @@ const HomePage: React.FC = () => {
       >
         <Header />
         <main>
-          <p>Hello, world!</p>
           <section>
             <h2>About</h2>
             <Avatar
