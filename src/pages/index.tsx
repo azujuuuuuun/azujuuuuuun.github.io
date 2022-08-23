@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
             <h2>About</h2>
             <picture>
               <img
-                src="/public/img/avatar.jpg"
+                src="/img/avatar.jpg"
                 alt="アバター"
                 width={300}
                 height={300}
