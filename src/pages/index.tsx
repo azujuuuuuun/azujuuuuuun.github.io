@@ -9,6 +9,7 @@ const HomePage: React.FC = () => {
       <Head>
         <title>azujuuuuuun.github.io</title>
         <meta charSet="utf-8" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       <div
         style={{
