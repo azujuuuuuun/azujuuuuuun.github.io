@@ -1,7 +1,7 @@
-import ja from './ja';
+import ja from "./ja";
 
 const locales = {
-  ja
+  ja,
 };
 
 export default locales.ja;

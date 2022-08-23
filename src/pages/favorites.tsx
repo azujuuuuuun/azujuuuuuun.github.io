@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../layouts/DefaultLayout';
-import Head from '../components/Head';
-import locales from '../locales';
+import Layout from "../layouts/DefaultLayout";
+import Head from "../components/Head";
+import locales from "../locales";
 
 const FavoritesPage: React.FC = () => (
   <Layout>
