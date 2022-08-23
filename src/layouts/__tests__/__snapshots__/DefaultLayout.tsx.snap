@@ -83,43 +83,11 @@ exports[`DefaultLayout renders correctly 1`] = `
         }
       >
         <a
-          href="/skills"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-        >
-          スキル
-        </a>
-      </li>
-      <li
-        style={
-          Object {
-            "display": "inline-block",
-            "marginRight": 16,
-          }
-        }
-      >
-        <a
           href="/favorites"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           好きなもの
-        </a>
-      </li>
-      <li
-        style={
-          Object {
-            "display": "inline-block",
-            "marginRight": 16,
-          }
-        }
-      >
-        <a
-          href="/notes"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-        >
-          メモ
         </a>
       </li>
       <li
