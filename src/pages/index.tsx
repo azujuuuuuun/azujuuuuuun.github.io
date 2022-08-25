@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Avatar from "@/components/Avatar";
 import Footer from "@/components/Footer";
-import styles from "@/styles/index.module.scss";
+import styles from "@/styles/pages/index.module.scss";
 
 const HomePage: React.FC = () => {
   return (
