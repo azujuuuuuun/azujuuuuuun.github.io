@@ -1,9 +1,15 @@
 import React from "react";
 import styles from "./index.module.scss";
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  className?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ className }) => {
   return (
-    <footer className={styles.Footer}>
+    <footer
+      className={className ? `${styles.Footer} ${className}` : styles.Footer}
+    >
       <small className={styles.Footer__copyright}>
         ©Copyright jun. All rights reserved.
       </small>

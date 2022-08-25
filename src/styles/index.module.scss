@@ -1,36 +1,40 @@
+@use "./variables" as *;
+
 .container {
-  margin: 3rem auto;
+  margin: $space-xxl auto;
   max-width: 650px;
-  padding: 0 24px;
+  padding: $space-none $space-l;
+}
+
+.Main {
+  display: block;
 }
 
 .About {
-  margin-top: 40px;
-
   &__heading {
-    font-size: 2.4rem;
+    font-size: $font-size-xl;
     font-weight: bold;
   }
 
   &__profile {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin-top: $space-s;
   }
 
   &__userInfo {
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
+    margin-left: $space-m;
   }
 
   &__username {
-    font-size: 1.8rem;
+    font-size: $font-size-l;
     font-weight: bold;
   }
 
   &__userId {
-    margin-top: 8px;
+    margin-top: $space-xs;
 
     &::before {
       content: "@";
@@ -39,43 +43,59 @@
 }
 
 .Favorite {
-  margin-top: 40px;
+  margin-top: $space-xxl;
 
   &__heading {
-    font-size: 2.4rem;
+    font-size: $font-size-xl;
     font-weight: bold;
   }
 
   &__list {
     display: flex;
-    margin-top: 12px;
+    margin-top: $space-s;
   }
 
   &__item + &__item {
     &::before {
       content: "/";
-      margin: 0 8px;
+      margin: $space-none $space-xs;
     }
   }
 }
 
 .Link {
-  margin-top: 40px;
+  margin-top: $space-xxl;
 
   &__heading {
-    font-size: 2.4rem;
+    font-size: $font-size-xl;
     font-weight: bold;
   }
 
   &__list {
     display: flex;
-    margin-top: 12px;
+    margin-top: $space-s;
   }
 
   &__item + &__item {
     &::before {
       content: "/";
-      margin: 0 8px;
+      margin: $space-none $space-xs;
     }
   }
+}
+
+.Header + .Main {
+  margin-top: $space-xxl;
+}
+
+.About + .Favorite {
+  margin-top: $space-xl;
+}
+
+.Favorite + .Link {
+  margin-top: $space-xl;
+}
+
+.Main + .Footer {
+  margin-top: $space-xxl;
 }
