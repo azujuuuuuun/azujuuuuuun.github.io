@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import styles from "./index.module.scss";
 
 interface FavoriteProps {
@@ -7,11 +8,7 @@ interface FavoriteProps {
 
 const Favorite: React.FC<FavoriteProps> = ({ className }) => {
   return (
-    <section
-      className={
-        className ? `${styles.Favorite} ${className}` : styles.Favorite
-      }
-    >
+    <section className={clsx(styles.Favorite, className)}>
       <h2 className={styles.Favorite__heading}>Favorite</h2>
       <ul className={styles.Favorite__list}>
         <li className={styles.Favorite__item}>Manga</li>
