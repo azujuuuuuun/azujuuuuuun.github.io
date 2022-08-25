@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import Avatar from "@/components/Avatar";
 import styles from "./index.module.scss";
 
@@ -8,9 +9,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ className }) => {
   return (
-    <section
-      className={className ? `${styles.About} ${className}` : styles.About}
-    >
+    <section className={clsx(styles.About, className)}>
       <h2 className={styles.About__heading}>About</h2>
       <div className={styles.About__profile}>
         <Avatar

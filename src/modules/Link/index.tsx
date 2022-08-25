@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import styles from "./index.module.scss";
 
 interface LinkProps {
@@ -7,9 +8,7 @@ interface LinkProps {
 
 const Link: React.FC<LinkProps> = ({ className }) => {
   return (
-    <section
-      className={className ? `${styles.Link} ${className}` : styles.Link}
-    >
+    <section className={clsx(styles.Link, className)}>
       <h2 className={styles.Link__heading}>Link</h2>
       <ul className={styles.Link__list}>
         <li className={styles.Link__item}>

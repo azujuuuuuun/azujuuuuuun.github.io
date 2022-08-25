@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import styles from "./index.module.scss";
 
 interface FooterProps {
@@ -7,9 +8,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className }) => {
   return (
-    <footer
-      className={className ? `${styles.Footer} ${className}` : styles.Footer}
-    >
+    <footer className={clsx(styles.Footer, className)}>
       <small className={styles.Footer__copyright}>©jun</small>
     </footer>
   );
