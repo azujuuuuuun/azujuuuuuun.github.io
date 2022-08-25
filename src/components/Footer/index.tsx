@@ -10,9 +10,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
     <footer
       className={className ? `${styles.Footer} ${className}` : styles.Footer}
     >
-      <small className={styles.Footer__copyright}>
-        ©Copyright jun. All rights reserved.
-      </small>
+      <small className={styles.Footer__copyright}>©jun</small>
     </footer>
   );
 };
