@@ -1,7 +1,9 @@
+@use "../../styles/variables" as *;
+
 .Footer {
-  padding-top: 20px;
+  display: block;
 
   &__copyright {
-    font-size: 1.2rem;
+    font-size: $font-size-xs;
   }
 }
