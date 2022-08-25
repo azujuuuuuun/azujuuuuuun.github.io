@@ -2,6 +2,7 @@
 
 .Header {
   display: block;
+  padding: $space-xs $space-l;
 
   &__title {
     font-size: $font-size-xxl;

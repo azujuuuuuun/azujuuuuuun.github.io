@@ -3,7 +3,6 @@
 .HomeTemplate {
   margin: $space-xxl auto;
   max-width: 650px;
-  padding: $space-none $space-l;
 
   &__header + &__main {
     margin-top: $space-xxl;
