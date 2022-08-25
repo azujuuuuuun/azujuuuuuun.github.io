@@ -1,0 +1,19 @@
+@use "../../styles/variables" as *;
+
+.HomeTemplate {
+  margin: $space-xxl auto;
+  max-width: 650px;
+  padding: $space-none $space-l;
+
+  &__header + &__main {
+    margin-top: $space-xxl;
+  }
+
+  &__module + &__module {
+    margin-top: $space-xl;
+  }
+
+  &__main + &__footer {
+    margin-top: $space-xxl;
+  }
+}
