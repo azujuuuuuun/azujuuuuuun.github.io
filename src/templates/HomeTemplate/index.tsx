@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "@/components/Header";
+import Header from "@/modules/Header";
 import About from "@/modules/About";
 import Favorite from "@/modules/Favorite";
 import Link from "@/modules/Link";
-import Footer from "@/components/Footer";
+import Footer from "@/modules/Footer";
 import styles from "./index.module.scss";
 
 const HomeTemplate: React.FC = () => {
