@@ -2,6 +2,7 @@
 
 .Favorite {
   display: block;
+  padding: $space-xs $space-l;
 
   &__heading {
     font-size: $font-size-xl;
