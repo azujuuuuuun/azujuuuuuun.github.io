@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
+    "lint:script": "next lint",
+    "lint:style": "stylelint '**/*.scss'",
+    "lint": "npm run lint:script && npm run lint:style",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -28,6 +30,9 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "sass": "1.54.5",
+    "stylelint": "14.11.0",
+    "stylelint-config-prettier-scss": "0.0.1",
+    "stylelint-config-standard-scss": "5.0.0",
     "typescript": "4.8.2"
   },
   "private": true,
