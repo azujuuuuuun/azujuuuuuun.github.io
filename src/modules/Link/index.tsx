@@ -6,7 +6,7 @@ interface LinkProps {
   className?: string;
 }
 
-const Link: React.FC<LinkProps> = ({ className }) => {
+export const Link: React.FC<LinkProps> = ({ className }) => {
   return (
     <section className={clsx(styles.Link, className)}>
       <h2 className={styles.Link__heading}>Link</h2>
@@ -42,5 +42,3 @@ const Link: React.FC<LinkProps> = ({ className }) => {
     </section>
   );
 };
-
-export default Link;

@@ -6,12 +6,10 @@ interface FooterProps {
   className?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ className }) => {
+export const Footer: React.FC<FooterProps> = ({ className }) => {
   return (
     <footer className={clsx(styles.Footer, className)}>
       <small className={styles.Footer__copyright}>©jun</small>
     </footer>
   );
 };
-
-export default Footer;

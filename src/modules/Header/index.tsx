@@ -6,12 +6,10 @@ interface HeaderProps {
   className?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ className }) => {
+export const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <header className={clsx(styles.Header, className)}>
       <h1 className={styles.Header__title}>azujuuuuuun.github.io</h1>
     </header>
   );
 };
-
-export default Header;

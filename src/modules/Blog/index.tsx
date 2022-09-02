@@ -9,7 +9,7 @@ interface BlogProps {
   feed: Feed;
 }
 
-const Blog: React.FC<BlogProps> = ({ className, feed }) => {
+export const Blog: React.FC<BlogProps> = ({ className, feed }) => {
   return (
     <section className={clsx(styles.Blog, className)}>
       <h2 className={styles.Blog__heading}>Blog</h2>
@@ -40,5 +40,3 @@ const Blog: React.FC<BlogProps> = ({ className, feed }) => {
     </section>
   );
 };
-
-export default Blog;

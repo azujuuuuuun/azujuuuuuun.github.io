@@ -1,13 +1,13 @@
 import React from "react";
 import clsx from "clsx";
-import Avatar from "@/components/Avatar";
+import { Avatar } from "@/components/Avatar";
 import styles from "./index.module.scss";
 
 interface AboutProps {
   className?: string;
 }
 
-const About: React.FC<AboutProps> = ({ className }) => {
+export const About: React.FC<AboutProps> = ({ className }) => {
   return (
     <section className={clsx(styles.About, className)}>
       <h2 className={styles.About__heading}>About</h2>
@@ -26,5 +26,3 @@ const About: React.FC<AboutProps> = ({ className }) => {
     </section>
   );
 };
-
-export default About;
