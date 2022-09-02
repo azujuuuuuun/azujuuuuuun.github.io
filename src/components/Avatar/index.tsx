@@ -8,7 +8,7 @@ interface AvatarProps {
   height: number;
 }
 
-const Avatar: React.FC<AvatarProps> = ({ src, alt, width, height }) => {
+export const Avatar: React.FC<AvatarProps> = ({ src, alt, width, height }) => {
   return (
     <picture>
       <img
@@ -21,5 +21,3 @@ const Avatar: React.FC<AvatarProps> = ({ src, alt, width, height }) => {
     </picture>
   );
 };
-
-export default Avatar;

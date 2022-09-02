@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Feed } from "@/models/feed";
 import { fetchFeed } from "@/api/fetch-feed";
-import HomeTemplate from "@/templates/HomeTemplate";
+import { HomeTemplate } from "@/templates/HomeTemplate";
 
 interface HomePageProps {
   feed: Feed | null;

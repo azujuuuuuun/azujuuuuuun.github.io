@@ -1,18 +1,18 @@
 import React from "react";
 import { Feed } from "@/models/feed";
-import Header from "@/modules/Header";
-import About from "@/modules/About";
-import Favorite from "@/modules/Favorite";
-import Link from "@/modules/Link";
-import Blog from "@/modules/Blog";
-import Footer from "@/modules/Footer";
+import { Header } from "@/modules/Header";
+import { About } from "@/modules/About";
+import { Favorite } from "@/modules/Favorite";
+import { Link } from "@/modules/Link";
+import { Blog } from "@/modules/Blog";
+import { Footer } from "@/modules/Footer";
 import styles from "./index.module.scss";
 
 interface HomeTemplateProps {
   feed: Feed | null;
 }
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ feed }) => {
+export const HomeTemplate: React.FC<HomeTemplateProps> = ({ feed }) => {
   return (
     <div className={styles.HomeTemplate}>
       <Header className={styles.HomeTemplate__header} />
@@ -26,5 +26,3 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ feed }) => {
     </div>
   );
 };
-
-export default HomeTemplate;

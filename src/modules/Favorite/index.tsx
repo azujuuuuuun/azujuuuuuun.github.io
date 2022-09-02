@@ -6,7 +6,7 @@ interface FavoriteProps {
   className?: string;
 }
 
-const Favorite: React.FC<FavoriteProps> = ({ className }) => {
+export const Favorite: React.FC<FavoriteProps> = ({ className }) => {
   return (
     <section className={clsx(styles.Favorite, className)}>
       <h2 className={styles.Favorite__heading}>Favorite</h2>
@@ -18,5 +18,3 @@ const Favorite: React.FC<FavoriteProps> = ({ className }) => {
     </section>
   );
 };
-
-export default Favorite;
