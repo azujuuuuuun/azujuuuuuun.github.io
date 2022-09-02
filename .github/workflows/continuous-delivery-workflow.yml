@@ -10,12 +10,26 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: "read"
+      id-token: "write"
     steps:
       - uses: actions/checkout@v3
 
       - run: npm ci
       - run: npm run lint
+
+      - id: "auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v0"
+        with:
+          workload_identity_provider: ${{ secrets.GC_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GC_SERVICE_ACCOUNT }}
+
       - run: npm run build
+        env:
+          GCS_BUCKET_NAME: ${{ secrets.GCS_BUCKET_NAME }}
+          GCS_FILE_NAME: ${{ secrets.GCS_FILE_NAME }}
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3

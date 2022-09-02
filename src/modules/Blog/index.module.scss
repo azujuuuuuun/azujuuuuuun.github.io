@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+
+.Blog {
+  display: block;
+  padding: $space-xs $space-l;
+
+  &__heading {
+    font-size: $font-size-xl;
+    font-weight: bold;
+  }
+
+  &__list {
+    margin-top: $space-s;
+  }
+
+  &__item {
+    display: flex;
+    line-height: $line-height-m;
+  }
+
+  &__item + &__item {
+    margin-top: $space-xs;
+  }
+
+  &__date + &__title {
+    margin-left: $space-xs;
+  }
+}
