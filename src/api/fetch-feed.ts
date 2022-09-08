@@ -24,7 +24,7 @@ if (!fileName) {
   throw new Error("GCS_FILE_NAME is not set.");
 }
 
-const client = new S3Client({
+export const client = new S3Client({
   credentials: { accessKeyId, secretAccessKey },
   endpoint,
   forcePathStyle: true,
