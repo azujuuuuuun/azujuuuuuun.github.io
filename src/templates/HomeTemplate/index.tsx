@@ -10,9 +10,13 @@ import styles from "./index.module.scss";
 
 interface HomeTemplateProps {
   feed: Feed | null;
+  updateDate: string;
 }
 
-export const HomeTemplate: React.FC<HomeTemplateProps> = ({ feed }) => {
+export const HomeTemplate: React.FC<HomeTemplateProps> = ({
+  feed,
+  updateDate,
+}) => {
   return (
     <div className={styles.HomeTemplate}>
       <Header className={styles.HomeTemplate__header} />
@@ -22,7 +26,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({ feed }) => {
         <Link className={styles.HomeTemplate__module} />
         {feed && <Blog className={styles.HomeTemplate__module} feed={feed} />}
       </main>
-      <Footer className={styles.HomeTemplate__footer} />
+      <Footer className={styles.HomeTemplate__footer} updateDate={updateDate} />
     </div>
   );
 };

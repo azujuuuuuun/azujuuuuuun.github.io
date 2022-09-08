@@ -7,28 +7,30 @@ import { HomeTemplate } from "@/templates/HomeTemplate";
 
 interface HomePageProps {
   feed: Feed | null;
+  updateDate: string;
 }
 
-const HomePage: React.FC<HomePageProps> = ({ feed }) => {
+const HomePage: React.FC<HomePageProps> = ({ feed, updateDate }) => {
   return (
     <>
       <Head>
         <title>azujuuuuuun.github.io</title>
       </Head>
-      <HomeTemplate feed={feed} />
+      <HomeTemplate feed={feed} updateDate={updateDate} />
     </>
   );
 };
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
+  const jsonDate = new Date().toJSON();
   try {
     const feed = await fetchFeed();
     return {
-      props: { feed },
+      props: { feed, updateDate: jsonDate },
     };
   } catch {
     return {
-      props: { feed: null },
+      props: { feed: null, updateDate: jsonDate },
     };
   }
 };
