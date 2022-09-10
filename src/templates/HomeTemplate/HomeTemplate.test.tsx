@@ -5,7 +5,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Feed } from "@/models/feed";
-import { HomeTemplate } from ".";
+import { HomeTemplate } from "./HomeTemplate";
 
 describe("HomeTemplate", () => {
   it("renders blog module", () => {

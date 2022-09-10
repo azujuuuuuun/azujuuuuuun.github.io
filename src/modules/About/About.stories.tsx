@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { About } from ".";
+import { About } from "./About";
 
 export default {
   title: "Modules/About",

@@ -5,7 +5,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { getFeedFixture, getEntryFixture } from "@/models/feed.fixture";
-import { Blog } from ".";
+import { Blog } from "./Blog";
 
 describe("Blog", () => {
   it("renders entry", () => {

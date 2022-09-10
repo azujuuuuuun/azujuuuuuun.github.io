@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { getFeedFixture, getEntryFixture } from "@/models/feed.fixture";
-import { Blog } from ".";
+import { Blog } from "./Blog";
 
 export default {
   title: "Modules/Blog",

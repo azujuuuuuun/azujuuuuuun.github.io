@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { getFeedFixture } from "@/models/feed.fixture";
-import { HomeTemplate } from ".";
+import { HomeTemplate } from "./HomeTemplate";
 
 export default {
   title: "Templates/HomeTemplate",

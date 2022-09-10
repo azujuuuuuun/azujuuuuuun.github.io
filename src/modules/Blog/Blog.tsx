@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import dayjs from "dayjs";
 import { Feed } from "@/models/feed";
-import styles from "./index.module.scss";
+import styles from "./Blog.module.scss";
 
 interface BlogProps {
   className?: string;
