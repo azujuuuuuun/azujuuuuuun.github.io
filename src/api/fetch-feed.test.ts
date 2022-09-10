@@ -20,7 +20,7 @@ describe("fetchFeed", () => {
     const expected = { title: "title" };
 
     // execute
-    const result = await fetchFeed();
+    const result = await fetchFeed("bucket", "file");
 
     // assert
     expect(GetObjectCommand).toHaveBeenCalledTimes(1);
@@ -38,7 +38,7 @@ describe("fetchFeed", () => {
 
     try {
       // execute
-      await fetchFeed();
+      await fetchFeed("bucket", "file");
     } catch (e) {
       // assert
       expect(GetObjectCommand).toHaveBeenCalledTimes(1);
