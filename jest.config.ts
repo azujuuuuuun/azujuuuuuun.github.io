@@ -8,6 +8,9 @@ const createJestConfig = nextJest({
 const config: Config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
   preset: "ts-jest",
 };
 
