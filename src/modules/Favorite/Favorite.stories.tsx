@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Favorite } from ".";
+import { Favorite } from "./Favorite";
 
 export default {
   title: "Modules/Favorite",
