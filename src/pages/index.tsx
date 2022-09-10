@@ -24,7 +24,15 @@ const HomePage: React.FC<HomePageProps> = ({ feed, updateDate }) => {
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
   const jsonDate = new Date().toJSON();
   try {
-    const feed = await fetchFeed();
+    const bucketName = process.env.GCS_BUCKET_NAME;
+    if (!bucketName) {
+      throw new Error("GCS_BUCKET_NAME is not set.");
+    }
+    const fileName = process.env.GCS_FILE_NAME;
+    if (!fileName) {
+      throw new Error("GCS_FILE_NAME is not set.");
+    }
+    const feed = await fetchFeed(bucketName, fileName);
     return {
       props: { feed, updateDate: jsonDate },
     };

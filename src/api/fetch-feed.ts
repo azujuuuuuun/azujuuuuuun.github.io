@@ -16,14 +16,6 @@ const endpoint = process.env.STORAGE_API_ENDPOINT;
 if (!endpoint) {
   throw new Error("STORAGE_API_ENDPOINT is not set.");
 }
-const bucketName = process.env.GCS_BUCKET_NAME;
-if (!bucketName) {
-  throw new Error("GCS_BUCKET_NAME is not set.");
-}
-const fileName = process.env.GCS_FILE_NAME;
-if (!fileName) {
-  throw new Error("GCS_FILE_NAME is not set.");
-}
 
 export const client = new S3Client({
   credentials: { accessKeyId, secretAccessKey },
@@ -32,7 +24,10 @@ export const client = new S3Client({
   region: "auto",
 });
 
-export const fetchFeed = async (): Promise<Feed> => {
+export const fetchFeed = async (
+  bucketName: string,
+  fileName: string
+): Promise<Feed> => {
   try {
     const params = {
       Bucket: bucketName,
