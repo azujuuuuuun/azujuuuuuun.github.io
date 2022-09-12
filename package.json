@@ -70,6 +70,9 @@
       "git add"
     ]
   },
+  "overrides": {
+    "trim": "^0.0.3"
+  },
   "volta": {
     "node": "18.7.0",
     "npm": "8.18.0"
