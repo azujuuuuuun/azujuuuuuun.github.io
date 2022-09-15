@@ -8,6 +8,7 @@ const createJestConfig = nextJest({
 const config: Config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
+  coveragePathIgnorePatterns: ["<rootDir>/src/config/env.ts"],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
   },
