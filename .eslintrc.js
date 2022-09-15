@@ -9,7 +9,6 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
-    "plugin:storybook/recommended",
   ],
   overrides: [],
   parser: "@typescript-eslint/parser",
