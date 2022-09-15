@@ -10,9 +10,7 @@
     "lint:style": "stylelint '**/*.scss'",
     "lint": "npm run lint:script && npm run lint:style",
     "format": "prettier --write .",
-    "test": "NODE_ENV=test jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "NODE_ENV=test jest"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.171.0",
@@ -24,15 +22,6 @@
     "winston": "3.8.2"
   },
   "devDependencies": {
-    "@babel/core": "7.19.0",
-    "@storybook/addon-actions": "6.5.12",
-    "@storybook/addon-essentials": "6.5.12",
-    "@storybook/addon-interactions": "6.5.12",
-    "@storybook/addon-links": "6.5.12",
-    "@storybook/builder-webpack5": "6.5.12",
-    "@storybook/manager-webpack5": "6.5.12",
-    "@storybook/react": "6.5.12",
-    "@storybook/testing-library": "0.0.13",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@types/jest": "29.0.1",
@@ -41,26 +30,20 @@
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "@typescript-eslint/parser": "5.36.2",
-    "babel-loader": "8.2.5",
-    "css-loader": "6.7.1",
     "eslint": "8.23.1",
     "eslint-config-next": "12.2.5",
     "eslint-plugin-react": "7.31.8",
-    "eslint-plugin-storybook": "0.6.4",
     "husky": "8.0.1",
     "jest": "29.0.3",
     "jest-environment-jsdom": "29.0.3",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "sass": "1.54.9",
-    "sass-loader": "13.0.2",
-    "style-loader": "3.3.1",
     "stylelint": "14.11.0",
     "stylelint-config-prettier-scss": "0.0.1",
     "stylelint-config-standard-scss": "5.0.0",
     "ts-jest": "29.0.1",
     "ts-node": "10.9.1",
-    "tsconfig-paths-webpack-plugin": "4.0.0",
     "typescript": "4.8.3"
   },
   "private": true,
@@ -69,9 +52,6 @@
       "npx eslint --fix",
       "git add"
     ]
-  },
-  "overrides": {
-    "trim": "^0.0.3"
   },
   "volta": {
     "node": "18.7.0",
