@@ -2,6 +2,7 @@
   "name": "azujuuuuuun.github.io",
   "version": "0.1.0",
   "description": "azujuuuuuun.github.io",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
