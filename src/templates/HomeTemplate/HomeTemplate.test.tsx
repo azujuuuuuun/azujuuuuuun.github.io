@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { logRoles, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Feed } from "@/models/feed";
 import { HomeTemplate } from "./HomeTemplate";
@@ -14,7 +14,7 @@ describe("HomeTemplate", () => {
 
     render(<HomeTemplate feed={feed} updateDate={updateDate} />);
 
-    expect(screen.queryByText(/Blog/, { selector: "h2" })).not.toBeNull();
+    expect(screen.queryByRole("heading", { name: "Blog" })).not.toBeNull();
   });
 
   it("doesn't renders blog module", () => {
@@ -22,6 +22,6 @@ describe("HomeTemplate", () => {
 
     render(<HomeTemplate feed={null} updateDate={updateDate} />);
 
-    expect(screen.queryByText(/Blog/, { selector: "h2" })).toBeNull();
+    expect(screen.queryByRole("heading", { name: "Blog" })).toBeNull();
   });
 });
