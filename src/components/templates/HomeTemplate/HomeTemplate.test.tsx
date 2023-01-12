@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import React from "react";
-import { logRoles, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Feed } from "@/domain/blog/model";
 import { HomeTemplate } from "./HomeTemplate";
