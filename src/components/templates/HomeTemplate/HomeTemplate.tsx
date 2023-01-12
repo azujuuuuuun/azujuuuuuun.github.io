@@ -1,5 +1,5 @@
 import React from "react";
-import { Feed } from "@/models/feed";
+import { Feed } from "@/domain/blog/model";
 import { Header } from "@/components/modules/Header/Header";
 import { About } from "@/components/modules/About/About";
 import { Favorite } from "@/components/modules/Favorite/Favorite";

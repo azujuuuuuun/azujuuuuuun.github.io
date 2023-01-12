@@ -4,7 +4,7 @@
 import React from "react";
 import { logRoles, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { Feed } from "@/models/feed";
+import { Feed } from "@/domain/blog/model";
 import { HomeTemplate } from "./HomeTemplate";
 
 describe("HomeTemplate", () => {

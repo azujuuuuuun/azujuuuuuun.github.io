@@ -1,9 +1,9 @@
 import React from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { Feed } from "@/models/feed";
+import { Feed } from "@/domain/blog/model";
 import { env } from "@/config/env";
-import { fetchFeed } from "@/api/fetch-feed";
+import { fetchFeed } from "@/domain/blog/repository";
 import { HomeTemplate } from "@/components/templates/HomeTemplate/HomeTemplate";
 
 interface HomePageProps {

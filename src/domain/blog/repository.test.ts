@@ -1,7 +1,7 @@
 import { Readable } from "stream";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 import { logger } from "@/lib/logger";
-import { client, fetchFeed } from "./fetch-feed";
+import { client, fetchFeed } from "./repository";
 
 jest.mock("@aws-sdk/client-s3");
 jest.mock("@/lib/logger");

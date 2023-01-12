@@ -1,4 +1,4 @@
-import { Entry, Feed } from "./feed";
+import { Entry, Feed } from "./model";
 
 export const getEntryFixture = (entry?: Partial<Entry>): Entry => {
   return {
