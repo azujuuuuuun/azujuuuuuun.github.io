@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Feed } from "@/models/feed";
 import { env } from "@/config/env";
 import { fetchFeed } from "@/api/fetch-feed";
-import { HomeTemplate } from "@/templates/HomeTemplate/HomeTemplate";
+import { HomeTemplate } from "@/components/templates/HomeTemplate/HomeTemplate";
 
 interface HomePageProps {
   feed: Feed | null;

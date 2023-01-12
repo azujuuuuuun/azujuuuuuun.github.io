@@ -1,11 +1,11 @@
 import React from "react";
 import { Feed } from "@/models/feed";
-import { Header } from "@/modules/Header/Header";
-import { About } from "@/modules/About/About";
-import { Favorite } from "@/modules/Favorite/Favorite";
-import { Link } from "@/modules/Link/Link";
-import { Blog } from "@/modules/Blog/Blog";
-import { Footer } from "@/modules/Footer/Footer";
+import { Header } from "@/components/modules/Header/Header";
+import { About } from "@/components/modules/About/About";
+import { Favorite } from "@/components/modules/Favorite/Favorite";
+import { Link } from "@/components/modules/Link/Link";
+import { Blog } from "@/components/modules/Blog/Blog";
+import { Footer } from "@/components/modules/Footer/Footer";
 import styles from "./HomeTemplate.module.scss";
 
 interface HomeTemplateProps {
