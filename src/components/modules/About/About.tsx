@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { Avatar } from "@/components/Avatar/Avatar";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
 import styles from "./About.module.scss";
 
 interface AboutProps {
