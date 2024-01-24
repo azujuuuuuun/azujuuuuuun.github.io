@@ -26,7 +26,7 @@ export const Link: React.FC<LinkProps> = ({ className }) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Twitter
+            X
           </a>
         </li>
         <li className={styles.Link__item}>
