@@ -17,7 +17,7 @@ export const client = new S3Client({
 
 export const fetchFeed = async (
   bucketName: string,
-  fileName: string
+  fileName: string,
 ): Promise<Feed> => {
   try {
     const params = {
