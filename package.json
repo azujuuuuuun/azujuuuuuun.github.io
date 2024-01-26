@@ -7,10 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:script": "next lint",
+    "lint:script": "biome lint src/",
     "lint:style": "stylelint '**/*.scss'",
     "lint": "pnpm run lint:script && pnpm run lint:style",
-    "format": "prettier --write .",
+    "format": "biome format . --write",
     "test": "vitest run"
   },
   "dependencies": {
