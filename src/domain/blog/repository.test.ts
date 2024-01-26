@@ -1,21 +1,22 @@
+import { vi } from "vitest";
 import { Readable } from "stream";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 import { logger } from "@/lib/logger";
 import { client, fetchFeed } from "./repository";
 
-jest.mock("@aws-sdk/client-s3");
-jest.mock("@/lib/logger");
+vi.mock("@aws-sdk/client-s3");
+vi.mock("@/lib/logger");
 
 describe("fetchFeed", () => {
   afterEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   it("returns feed", async () => {
     // setup
     const body = Readable.from('{"title":"title"}');
-    const mockSend = jest.fn().mockReturnValue({ Body: body });
-    const spy = jest.spyOn(client, "send").mockImplementation(mockSend);
+    const mockSend = vi.fn().mockReturnValue({ Body: body });
+    const spy = vi.spyOn(client, "send").mockImplementation(mockSend);
 
     const expected = { title: "title" };
 
@@ -33,8 +34,8 @@ describe("fetchFeed", () => {
 
     // setup
     const error = new Error("error message");
-    const mockSend = jest.fn().mockRejectedValue(error);
-    const spy = jest.spyOn(client, "send").mockImplementation(mockSend);
+    const mockSend = vi.fn().mockRejectedValue(error);
+    const spy = vi.spyOn(client, "send").mockImplementation(mockSend);
 
     try {
       // execute
