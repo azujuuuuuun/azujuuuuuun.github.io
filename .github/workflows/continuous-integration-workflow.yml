@@ -7,18 +7,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - name: install
         run: |
-          npm ci
+          pnpm install
       - name: lint
         run: |
-          npm run lint
+          pnpm run lint
       - name: test
         run: |
-          npm run test
+          pnpm run test
       - name: build
         run: |
-          npm run build
+          pnpm run build
         env:
           STORAGE_API_ENDPOINT: https://storage.googleapis.com
           STORAGE_ACCESS_KEY_ID: ${{ secrets.STORAGE_ACCESS_KEY_ID }}
