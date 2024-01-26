@@ -7,10 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:script": "next lint",
+    "lint:script": "biome lint src/",
     "lint:style": "stylelint '**/*.scss'",
     "lint": "pnpm run lint:script && pnpm run lint:style",
-    "format": "prettier --write .",
+    "format": "biome format . --write",
     "test": "vitest run"
   },
   "dependencies": {
@@ -23,21 +23,16 @@
     "winston": "3.11.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
     "@testing-library/jest-dom": "6.3.0",
     "@testing-library/react": "14.1.2",
     "@types/node": "20.11.6",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
-    "@typescript-eslint/eslint-plugin": "6.19.1",
-    "@typescript-eslint/parser": "6.19.1",
     "@vitejs/plugin-react": "4.2.1",
-    "eslint": "8.56.0",
-    "eslint-config-next": "14.1.0",
-    "eslint-plugin-react": "7.33.2",
     "husky": "8.0.3",
     "jsdom": "24.0.0",
     "lint-staged": "15.2.0",
-    "prettier": "3.2.4",
     "sass": "1.70.0",
     "stylelint": "16.2.0",
     "stylelint-config-prettier-scss": "1.0.0",
@@ -48,9 +43,13 @@
   },
   "private": true,
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "npx eslint --fix",
-      "git add"
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --files-ignore-unknown=true",
+      "biome check --apply --no-errors-on-unmatched",
+      "biome check --apply --organize-imports-enabled=false --no-errors-on-unmatched",
+      "biome check --apply-unsafe --no-errors-on-unmatched",
+      "biome format --write --no-errors-on-unmatched",
+      "biome lint --apply --no-errors-on-unmatched"
     ]
   },
   "volta": {
