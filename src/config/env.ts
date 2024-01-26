@@ -6,8 +6,8 @@ export const env = {
   fileName: process.env.GCS_FILE_NAME ?? "",
 };
 
-Object.entries(env).forEach(([key, value]) => {
+for (const [key, value] of Object.entries(env)) {
   if (!value) {
     throw new Error(`${key} is not set.`);
   }
-});
+}
