@@ -35,8 +35,8 @@ devDependencies:
     specifier: 6.3.0
     version: 6.3.0(vitest@1.2.2)
   '@testing-library/react':
-    specifier: 14.1.2
-    version: 14.1.2(react-dom@18.2.0)(react@18.2.0)
+    specifier: 14.3.1
+    version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
   '@types/node':
     specifier: 20.11.7
     version: 20.11.7
@@ -2008,8 +2008,8 @@ packages:
       vitest: 1.2.2(@types/node@20.11.7)(jsdom@24.0.0)(sass@1.70.0)
     dev: true
 
-  /@testing-library/react@14.1.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-z4p7DVBTPjKM5qDZ0t5ZjzkpSNb+fZy1u6bzO7kk8oeGagpPCAtgh4cx1syrfp7a+QWkM021jGqjJaxJJnXAZg==}
+  /@testing-library/react@14.3.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-H99XjUhWQw0lTgyMN05W3xQG1Nh4lq574D8keFf1dDoNTJgp66VbJozRaczoF+wsiaPJNt/TcnfpLGufGxSrZQ==}
     engines: {node: '>=14'}
     peerDependencies:
       react: ^18.0.0
