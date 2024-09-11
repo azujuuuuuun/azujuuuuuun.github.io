@@ -1,7 +1,7 @@
-import React from "react";
+import type { Feed } from "@/domain/blog/model";
 import clsx from "clsx";
 import dayjs from "dayjs";
-import { Feed } from "@/domain/blog/model";
+import type React from "react";
 import styles from "./Blog.module.scss";
 
 interface BlogProps {

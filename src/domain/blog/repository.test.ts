@@ -1,7 +1,7 @@
-import { vi } from "vitest";
-import { Readable } from "stream";
-import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { Readable } from "node:stream";
 import { logger } from "@/lib/logger";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { vi } from "vitest";
 import { client, fetchFeed } from "./repository";
 
 vi.mock("@aws-sdk/client-s3");

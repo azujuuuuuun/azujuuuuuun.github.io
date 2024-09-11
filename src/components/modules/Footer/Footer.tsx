@@ -1,6 +1,6 @@
-import React from "react";
 import clsx from "clsx";
 import dayjs from "dayjs";
+import type React from "react";
 import styles from "./Footer.module.scss";
 
 interface FooterProps {

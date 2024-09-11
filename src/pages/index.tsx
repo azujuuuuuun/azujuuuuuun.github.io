@@ -1,10 +1,10 @@
-import React from "react";
-import { GetStaticProps } from "next";
-import Head from "next/head";
-import { Feed } from "@/domain/blog/model";
-import { env } from "@/config/env";
-import { fetchFeed } from "@/domain/blog/repository";
 import { HomeTemplate } from "@/components/templates/HomeTemplate/HomeTemplate";
+import { env } from "@/config/env";
+import type { Feed } from "@/domain/blog/model";
+import { fetchFeed } from "@/domain/blog/repository";
+import type { GetStaticProps } from "next";
+import Head from "next/head";
+import type React from "react";
 
 interface HomePageProps {
   feed: Feed | null;

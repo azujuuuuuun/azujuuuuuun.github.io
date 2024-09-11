@@ -1,9 +1,9 @@
+import type { Readable } from "node:stream";
 import streamConsumers from "node:stream/consumers";
-import { Readable } from "stream";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 import { env } from "@/config/env";
-import { Feed } from "@/domain/blog/model";
+import type { Feed } from "@/domain/blog/model";
 import { logger } from "@/lib/logger";
+import { GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
 export const client = new S3Client({
   credentials: {

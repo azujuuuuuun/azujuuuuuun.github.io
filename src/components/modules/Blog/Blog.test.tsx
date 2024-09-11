@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
-import React from "react";
+import { getEntryFixture, getFeedFixture } from "@/domain/blog/model.fixture";
 import { render, screen } from "@testing-library/react";
-import { getFeedFixture, getEntryFixture } from "@/domain/blog/model.fixture";
+import React from "react";
 import { Blog } from "./Blog";
 
 describe("Blog", () => {

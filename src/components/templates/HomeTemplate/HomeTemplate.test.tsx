@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
-import React from "react";
+import type { Feed } from "@/domain/blog/model";
 import { render, screen } from "@testing-library/react";
-import { Feed } from "@/domain/blog/model";
+import React from "react";
 import { HomeTemplate } from "./HomeTemplate";
 
 describe("HomeTemplate", () => {
