@@ -12,8 +12,8 @@ dependencies:
     specifier: 2.1.1
     version: 2.1.1
   dayjs:
-    specifier: 1.11.10
-    version: 1.11.10
+    specifier: 1.11.13
+    version: 1.11.13
   next:
     specifier: 14.1.1
     version: 14.1.1(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)
@@ -69,7 +69,7 @@ devDependencies:
     version: 1.0.0(stylelint@16.9.0)
   stylelint-config-standard-scss:
     specifier: 13.0.0
-    version: 13.0.0(postcss@8.4.33)(stylelint@16.9.0)
+    version: 13.0.0(postcss@8.4.45)(stylelint@16.9.0)
   ts-node:
     specifier: 10.9.2
     version: 10.9.2(@types/node@20.16.5)(typescript@5.3.3)
@@ -2616,8 +2616,8 @@ packages:
       whatwg-url: 14.0.0
     dev: true
 
-  /dayjs@1.11.10:
-    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+  /dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
     dev: false
 
   /debug@4.3.4:
@@ -3827,13 +3827,13 @@ packages:
       postcss: 8.4.45
     dev: true
 
-  /postcss-scss@4.0.9(postcss@8.4.33):
+  /postcss-scss@4.0.9(postcss@8.4.45):
     resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.29
     dependencies:
-      postcss: 8.4.33
+      postcss: 8.4.45
     dev: true
 
   /postcss-selector-parser@6.0.15:
@@ -4300,7 +4300,7 @@ packages:
       stylelint: 16.9.0(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.33)(stylelint@16.9.0):
+  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.45)(stylelint@16.9.0):
     resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -4310,8 +4310,8 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.33
-      postcss-scss: 4.0.9(postcss@8.4.33)
+      postcss: 8.4.45
+      postcss-scss: 4.0.9(postcss@8.4.45)
       stylelint: 16.9.0(typescript@5.3.3)
       stylelint-config-recommended: 14.0.0(stylelint@16.9.0)
       stylelint-scss: 6.1.0(stylelint@16.9.0)
@@ -4326,7 +4326,7 @@ packages:
       stylelint: 16.9.0(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-standard-scss@13.0.0(postcss@8.4.33)(stylelint@16.9.0):
+  /stylelint-config-standard-scss@13.0.0(postcss@8.4.45)(stylelint@16.9.0):
     resolution: {integrity: sha512-WaLvkP689qSYUpJQPCo30TFJSSc3VzvvoWnrgp+7PpVby5o8fRUY1cZcP0sePZfjrFl9T8caGhcKg0GO34VDiQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -4336,9 +4336,9 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.33
+      postcss: 8.4.45
       stylelint: 16.9.0(typescript@5.3.3)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.33)(stylelint@16.9.0)
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.45)(stylelint@16.9.0)
       stylelint-config-standard: 36.0.0(stylelint@16.9.0)
     dev: true
 
