@@ -2,7 +2,6 @@ import type { Feed } from "@/domain/blog/model";
 import clsx from "clsx";
 import dayjs from "dayjs";
 import type React from "react";
-import styles from "./Blog.module.scss";
 
 interface BlogProps {
   className?: string;
@@ -11,21 +10,18 @@ interface BlogProps {
 
 export const Blog: React.FC<BlogProps> = ({ className, feed }) => {
   return (
-    <section className={clsx(styles.Blog, className)}>
-      <h2 className={styles.Blog__heading}>Blog</h2>
+    <section className={clsx("block px-l py-xs", className)}>
+      <h2 className="text-xl font-bold">Blog</h2>
       {feed.entry.length > 0 && (
         <>
-          <ul className={styles.Blog__list}>
+          <ul className="mt-s">
             {feed.entry.map((e) => (
-              <li key={e.id} className={styles.Blog__item}>
-                <time
-                  className={styles.Blog__date}
-                  dateTime={dayjs(e.published).format("YYYY-MM-DD")}
-                >
+              <li key={e.id} className="flex leading-[1.6] mt-xs first:mt-0">
+                <time dateTime={dayjs(e.published).format("YYYY-MM-DD")}>
                   {dayjs(e.published).format("YYYY/MM/DD")}
                 </time>
                 <a
-                  className={styles.Blog__title}
+                  className="ml-xs"
                   href={e.link[0].href}
                   target="_blank"
                   rel="noreferrer noopener"
