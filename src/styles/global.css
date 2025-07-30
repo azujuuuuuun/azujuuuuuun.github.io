@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #0d1117;
+  --color-white: #c9d1d9;
+  --color-blue: #58a6ff;
+
+  --text-xs: 1.2rem;
+  --text-m: 1.6rem;
+  --text-l: 1.8rem;
+  --text-xl: 2.4rem;
+  --text-xxl: 2.8rem;
+  --text-base: 1.6rem;
+
+  --leading-m: 1.6;
+
+  --spacing-none: 0;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 20px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 40px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  font-size: var(--text-base);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  a {
+    color: var(--color-blue);
+  }
+}

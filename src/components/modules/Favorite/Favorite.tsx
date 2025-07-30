@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import type React from "react";
-import styles from "./Favorite.module.scss";
 
 interface FavoriteProps {
   className?: string;
@@ -8,12 +7,12 @@ interface FavoriteProps {
 
 export const Favorite: React.FC<FavoriteProps> = ({ className }) => {
   return (
-    <section className={clsx(styles.Favorite, className)}>
-      <h2 className={styles.Favorite__heading}>Favorite</h2>
-      <ul className={styles.Favorite__list}>
-        <li className={styles.Favorite__item}>Manga</li>
-        <li className={styles.Favorite__item}>Anime</li>
-        <li className={styles.Favorite__item}>Programming</li>
+    <section className={clsx("block px-l py-xs", className)}>
+      <h2 className="text-xl font-bold">Favorite</h2>
+      <ul className="flex mt-s">
+        <li>Manga</li>
+        <li className="before:content-['/'] before:mx-xs">Anime</li>
+        <li className="before:content-['/'] before:mx-xs">Programming</li>
       </ul>
     </section>
   );

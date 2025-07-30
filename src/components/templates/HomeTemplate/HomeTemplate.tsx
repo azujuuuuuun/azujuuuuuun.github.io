@@ -6,7 +6,6 @@ import { Header } from "@/components/modules/Header/Header";
 import { Link } from "@/components/modules/Link/Link";
 import type { Feed } from "@/domain/blog/model";
 import type React from "react";
-import styles from "./HomeTemplate.module.scss";
 
 interface HomeTemplateProps {
   feed: Feed | null;
@@ -18,15 +17,15 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   updateDate,
 }) => {
   return (
-    <div className={styles.HomeTemplate}>
-      <Header className={styles.HomeTemplate__header} />
-      <main className={styles.HomeTemplate__main}>
-        <About className={styles.HomeTemplate__module} />
-        <Favorite className={styles.HomeTemplate__module} />
-        <Link className={styles.HomeTemplate__module} />
-        {feed && <Blog className={styles.HomeTemplate__module} feed={feed} />}
+    <div className="my-xxl mx-auto max-w-[650px]">
+      <Header />
+      <main className="mt-xxl">
+        <About className="mt-xl first:mt-0" />
+        <Favorite className="mt-xl first:mt-0" />
+        <Link className="mt-xl first:mt-0" />
+        {feed && <Blog className="mt-xl first:mt-0" feed={feed} />}
       </main>
-      <Footer className={styles.HomeTemplate__footer} updateDate={updateDate} />
+      <Footer className="mt-xxl" updateDate={updateDate} />
     </div>
   );
 };

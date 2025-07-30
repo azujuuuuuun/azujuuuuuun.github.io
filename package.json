@@ -7,9 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:script": "biome lint src/",
-    "lint:style": "stylelint '**/*.scss'",
-    "lint": "pnpm run lint:script && pnpm run lint:style",
+    "lint": "biome lint src/",
     "format": "biome format . --write",
     "test": "vitest run"
   },
@@ -24,6 +22,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@tailwindcss/postcss": "4.1.11",
     "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.1",
     "@types/node": "20.16.5",
@@ -33,10 +32,8 @@
     "husky": "9.1.6",
     "jsdom": "25.0.0",
     "lint-staged": "15.2.10",
-    "sass": "1.79.3",
-    "stylelint": "16.9.0",
-    "stylelint-config-prettier-scss": "1.0.0",
-    "stylelint-config-standard-scss": "13.1.0",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.11",
     "ts-node": "10.9.2",
     "typescript": "5.6.2",
     "vitest": "2.1.1"

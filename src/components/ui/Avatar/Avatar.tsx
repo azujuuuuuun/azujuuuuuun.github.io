@@ -1,5 +1,4 @@
 import type React from "react";
-import styles from "./Avatar.module.scss";
 
 interface AvatarProps {
   src: string;
@@ -12,7 +11,7 @@ export const Avatar: React.FC<AvatarProps> = ({ src, alt, width, height }) => {
   return (
     <picture>
       <img
-        className={styles.Avatar__img}
+        className="w-[100px] h-[100px] rounded-full"
         src={src}
         alt={alt}
         width={width}

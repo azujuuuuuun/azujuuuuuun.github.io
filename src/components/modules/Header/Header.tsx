@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import type React from "react";
-import styles from "./Header.module.scss";
 
 interface HeaderProps {
   className?: string;
@@ -8,8 +7,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
-    <header className={clsx(styles.Header, className)}>
-      <h1 className={styles.Header__title}>azujuuuuuun.github.io</h1>
+    <header className={clsx("block px-l py-xs", className)}>
+      <h1 className="text-xxl font-bold break-words">azujuuuuuun.github.io</h1>
     </header>
   );
 };
