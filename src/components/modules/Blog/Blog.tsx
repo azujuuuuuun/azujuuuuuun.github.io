@@ -22,7 +22,7 @@ export const Blog: React.FC<BlogProps> = ({ className, feed }) => {
                 </time>
                 <a
                   className="ml-xs"
-                  href={e.link[0].href}
+                  href={e.link.href}
                   target="_blank"
                   rel="noreferrer noopener"
                 >
