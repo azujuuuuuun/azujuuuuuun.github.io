@@ -19,7 +19,7 @@ importers:
         version: 1.11.13
       next:
         specifier: 14.2.13
-        version: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.3)
+        version: 14.2.13(@babel/core@7.25.2(supports-color@7.2.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.3)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -43,8 +43,8 @@ importers:
         specifier: 16.0.1
         version: 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
-        specifier: 20.16.5
-        version: 20.16.5
+        specifier: 20.19.43
+        version: 20.19.43
       '@types/react':
         specifier: 18.3.8
         version: 18.3.8
@@ -53,16 +53,16 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: 4.3.1
-        version: 4.3.1(vite@5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3))
+        version: 4.3.1(supports-color@7.2.0)(vite@5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3))
       husky:
         specifier: 9.1.6
         version: 9.1.6
       jsdom:
         specifier: 25.0.0
-        version: 25.0.0
+        version: 25.0.0(supports-color@7.2.0)
       lint-staged:
         specifier: 15.2.10
-        version: 15.2.10
+        version: 15.2.10(supports-color@7.2.0)
       postcss:
         specifier: 8.5.6
         version: 8.5.6
@@ -71,13 +71,13 @@ importers:
         version: 4.1.11
       ts-node:
         specifier: 10.9.2
-        version: 10.9.2(@types/node@20.16.5)(typescript@5.6.2)
+        version: 10.9.2(@types/node@20.19.43)(typescript@5.6.2)
       typescript:
         specifier: 5.6.2
         version: 5.6.2
       vitest:
         specifier: 2.1.1
-        version: 2.1.1(@types/node@20.16.5)(jsdom@25.0.0)(lightningcss@1.30.1)(sass@1.79.3)
+        version: 2.1.1(@types/node@20.19.43)(jsdom@25.0.0(supports-color@7.2.0))(lightningcss@1.30.1)(sass@1.79.3)(supports-color@7.2.0)
 
 packages:
 
@@ -1080,8 +1080,8 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/node@20.16.5':
-    resolution: {integrity: sha512-VwYCweNo3ERajwy0IUlqqcyZ8/A7Zwa9ZP3MnENWcB11AejO+tLy3pu850goUW2FC/IJMdZUfKpX/yxL1gymCA==}
+  '@types/node@20.19.43':
+    resolution: {integrity: sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==}
 
   '@types/prop-types@15.7.11':
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
@@ -1720,6 +1720,7 @@ packages:
   next@14.2.13:
     resolution: {integrity: sha512-BseY9YNw8QJSwLYD7hlZzl6QVDoSFHL/URN5K64kVEVpCsSOWeyjbIGK+dZUaRViHTaMQX8aqmnn0PHBbGZezg==}
     engines: {node: '>=18.17.0'}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -2056,8 +2057,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   universalify@0.2.0:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
@@ -2734,20 +2735,20 @@ snapshots:
 
   '@babel/compat-data@7.25.4': {}
 
-  '@babel/core@7.25.2':
+  '@babel/core@7.25.2(supports-color@7.2.0)':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@babel/code-frame': 7.24.7
       '@babel/generator': 7.25.6
       '@babel/helper-compilation-targets': 7.25.2
-      '@babel/helper-module-transforms': 7.25.2(@babel/core@7.25.2)
+      '@babel/helper-module-transforms': 7.25.2(@babel/core@7.25.2(supports-color@7.2.0))(supports-color@7.2.0)
       '@babel/helpers': 7.25.6
       '@babel/parser': 7.25.6
       '@babel/template': 7.25.0
-      '@babel/traverse': 7.25.6
+      '@babel/traverse': 7.25.6(supports-color@7.2.0)
       '@babel/types': 7.25.6
       convert-source-map: 2.0.0
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -2769,28 +2770,28 @@ snapshots:
       lru-cache: 5.1.1
       semver: 6.3.1
 
-  '@babel/helper-module-imports@7.24.7':
+  '@babel/helper-module-imports@7.24.7(supports-color@7.2.0)':
     dependencies:
-      '@babel/traverse': 7.25.6
+      '@babel/traverse': 7.25.6(supports-color@7.2.0)
       '@babel/types': 7.25.6
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.25.2(@babel/core@7.25.2)':
+  '@babel/helper-module-transforms@7.25.2(@babel/core@7.25.2(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
-      '@babel/core': 7.25.2
-      '@babel/helper-module-imports': 7.24.7
-      '@babel/helper-simple-access': 7.24.7
+      '@babel/core': 7.25.2(supports-color@7.2.0)
+      '@babel/helper-module-imports': 7.24.7(supports-color@7.2.0)
+      '@babel/helper-simple-access': 7.24.7(supports-color@7.2.0)
       '@babel/helper-validator-identifier': 7.24.7
-      '@babel/traverse': 7.25.6
+      '@babel/traverse': 7.25.6(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
   '@babel/helper-plugin-utils@7.24.8': {}
 
-  '@babel/helper-simple-access@7.24.7':
+  '@babel/helper-simple-access@7.24.7(supports-color@7.2.0)':
     dependencies:
-      '@babel/traverse': 7.25.6
+      '@babel/traverse': 7.25.6(supports-color@7.2.0)
       '@babel/types': 7.25.6
     transitivePeerDependencies:
       - supports-color
@@ -2825,14 +2826,14 @@ snapshots:
     dependencies:
       '@babel/types': 7.25.6
 
-  '@babel/plugin-transform-react-jsx-self@7.24.7(@babel/core@7.25.2)':
+  '@babel/plugin-transform-react-jsx-self@7.24.7(@babel/core@7.25.2(supports-color@7.2.0))':
     dependencies:
-      '@babel/core': 7.25.2
+      '@babel/core': 7.25.2(supports-color@7.2.0)
       '@babel/helper-plugin-utils': 7.24.8
 
-  '@babel/plugin-transform-react-jsx-source@7.24.7(@babel/core@7.25.2)':
+  '@babel/plugin-transform-react-jsx-source@7.24.7(@babel/core@7.25.2(supports-color@7.2.0))':
     dependencies:
-      '@babel/core': 7.25.2
+      '@babel/core': 7.25.2(supports-color@7.2.0)
       '@babel/helper-plugin-utils': 7.24.8
 
   '@babel/runtime@7.23.9':
@@ -2845,14 +2846,14 @@ snapshots:
       '@babel/parser': 7.25.6
       '@babel/types': 7.25.6
 
-  '@babel/traverse@7.25.6':
+  '@babel/traverse@7.25.6(supports-color@7.2.0)':
     dependencies:
       '@babel/code-frame': 7.24.7
       '@babel/generator': 7.25.6
       '@babel/parser': 7.25.6
       '@babel/template': 7.25.0
       '@babel/types': 7.25.6
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -3568,9 +3569,9 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/node@20.16.5':
+  '@types/node@20.19.43':
     dependencies:
-      undici-types: 6.19.8
+      undici-types: 6.21.0
 
   '@types/prop-types@15.7.11': {}
 
@@ -3585,14 +3586,14 @@ snapshots:
 
   '@types/triple-beam@1.3.5': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3))':
+  '@vitejs/plugin-react@4.3.1(supports-color@7.2.0)(vite@5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3))':
     dependencies:
-      '@babel/core': 7.25.2
-      '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.25.2)
-      '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.25.2)
+      '@babel/core': 7.25.2(supports-color@7.2.0)
+      '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.25.2(supports-color@7.2.0))
+      '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.25.2(supports-color@7.2.0))
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3)
+      vite: 5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -3603,13 +3604,13 @@ snapshots:
       chai: 5.1.1
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.1(@vitest/spy@2.1.1)(vite@5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3))':
+  '@vitest/mocker@2.1.1(@vitest/spy@2.1.1)(vite@5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3))':
     dependencies:
       '@vitest/spy': 2.1.1
       estree-walker: 3.0.3
       magic-string: 0.30.11
     optionalDependencies:
-      vite: 5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3)
+      vite: 5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3)
 
   '@vitest/pretty-format@2.1.1':
     dependencies:
@@ -3640,9 +3641,9 @@ snapshots:
 
   acorn@8.11.3: {}
 
-  agent-base@7.1.0:
+  agent-base@7.1.0(supports-color@7.2.0):
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3807,9 +3808,11 @@ snapshots:
 
   dayjs@1.11.13: {}
 
-  debug@4.3.6:
+  debug@4.3.6(supports-color@7.2.0):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 7.2.0
 
   decimal.js@10.4.3: {}
 
@@ -3931,17 +3934,17 @@ snapshots:
     dependencies:
       whatwg-encoding: 3.1.1
 
-  http-proxy-agent@7.0.2:
+  http-proxy-agent@7.0.2(supports-color@7.2.0):
     dependencies:
-      agent-base: 7.1.0
-      debug: 4.3.6
+      agent-base: 7.1.0(supports-color@7.2.0)
+      debug: 4.3.6(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.5:
+  https-proxy-agent@7.0.5(supports-color@7.2.0):
     dependencies:
-      agent-base: 7.1.0
-      debug: 4.3.6
+      agent-base: 7.1.0(supports-color@7.2.0)
+      debug: 4.3.6(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3982,15 +3985,15 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  jsdom@25.0.0:
+  jsdom@25.0.0(supports-color@7.2.0):
     dependencies:
       cssstyle: 4.0.1
       data-urls: 5.0.0
       decimal.js: 10.4.3
       form-data: 4.0.0
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.5
+      http-proxy-agent: 7.0.2(supports-color@7.2.0)
+      https-proxy-agent: 7.0.5(supports-color@7.2.0)
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.12
       parse5: 7.1.2
@@ -4063,11 +4066,11 @@ snapshots:
 
   lilconfig@3.1.2: {}
 
-  lint-staged@15.2.10:
+  lint-staged@15.2.10(supports-color@7.2.0):
     dependencies:
       chalk: 5.3.0
       commander: 12.1.0
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       execa: 8.0.1
       lilconfig: 3.1.2
       listr2: 8.2.4
@@ -4174,7 +4177,7 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.3):
+  next@14.2.13(@babel/core@7.25.2(supports-color@7.2.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.3):
     dependencies:
       '@next/env': 14.2.13
       '@swc/helpers': 0.5.5
@@ -4184,7 +4187,7 @@ snapshots:
       postcss: 8.4.31
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      styled-jsx: 5.1.1(@babel/core@7.25.2)(react@18.3.1)
+      styled-jsx: 5.1.1(@babel/core@7.25.2(supports-color@7.2.0))(react@18.3.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.13
       '@next/swc-darwin-x64': 14.2.13
@@ -4407,12 +4410,12 @@ snapshots:
 
   strnum@1.0.5: {}
 
-  styled-jsx@5.1.1(@babel/core@7.25.2)(react@18.3.1):
+  styled-jsx@5.1.1(@babel/core@7.25.2(supports-color@7.2.0))(react@18.3.1):
     dependencies:
       client-only: 0.0.1
       react: 18.3.1
     optionalDependencies:
-      '@babel/core': 7.25.2
+      '@babel/core': 7.25.2(supports-color@7.2.0)
 
   supports-color@5.5.0:
     dependencies:
@@ -4468,14 +4471,14 @@ snapshots:
 
   triple-beam@1.4.1: {}
 
-  ts-node@10.9.2(@types/node@20.16.5)(typescript@5.6.2):
+  ts-node@10.9.2(@types/node@20.19.43)(typescript@5.6.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.9
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.16.5
+      '@types/node': 20.19.43
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -4490,7 +4493,7 @@ snapshots:
 
   typescript@5.6.2: {}
 
-  undici-types@6.19.8: {}
+  undici-types@6.21.0: {}
 
   universalify@0.2.0: {}
 
@@ -4511,12 +4514,12 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vite-node@2.1.1(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3):
+  vite-node@2.1.1(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3)(supports-color@7.2.0):
     dependencies:
       cac: 6.7.14
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       pathe: 1.1.2
-      vite: 5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3)
+      vite: 5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4527,28 +4530,28 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3):
+  vite@5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3):
     dependencies:
       esbuild: 0.19.12
       postcss: 8.5.6
       rollup: 4.9.6
     optionalDependencies:
-      '@types/node': 20.16.5
+      '@types/node': 20.19.43
       fsevents: 2.3.3
       lightningcss: 1.30.1
       sass: 1.79.3
 
-  vitest@2.1.1(@types/node@20.16.5)(jsdom@25.0.0)(lightningcss@1.30.1)(sass@1.79.3):
+  vitest@2.1.1(@types/node@20.19.43)(jsdom@25.0.0(supports-color@7.2.0))(lightningcss@1.30.1)(sass@1.79.3)(supports-color@7.2.0):
     dependencies:
       '@vitest/expect': 2.1.1
-      '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3))
+      '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3))
       '@vitest/pretty-format': 2.1.1
       '@vitest/runner': 2.1.1
       '@vitest/snapshot': 2.1.1
       '@vitest/spy': 2.1.1
       '@vitest/utils': 2.1.1
       chai: 5.1.1
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       magic-string: 0.30.11
       pathe: 1.1.2
       std-env: 3.7.0
@@ -4556,12 +4559,12 @@ snapshots:
       tinyexec: 0.3.0
       tinypool: 1.0.1
       tinyrainbow: 1.2.0
-      vite: 5.0.12(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3)
-      vite-node: 2.1.1(@types/node@20.16.5)(lightningcss@1.30.1)(sass@1.79.3)
+      vite: 5.0.12(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3)
+      vite-node: 2.1.1(@types/node@20.19.43)(lightningcss@1.30.1)(sass@1.79.3)(supports-color@7.2.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 20.16.5
-      jsdom: 25.0.0
+      '@types/node': 20.19.43
+      jsdom: 25.0.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - less
       - lightningcss
